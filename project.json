@@ -1,0 +1,25 @@
+{
+ "name": "Spyglass 2",
+ "description": "Visual Intelligence for Eve Online",
+ "author": {
+  "name": "Crypta Electrica",
+  "email": "crypta@crypta.tech"
+ },
+ "version": "0.1.0",
+ "binaryname": "spyglass-2",
+ "frontend": {
+  "dir": "frontend",
+  "install": "npm install",
+  "build": "npm run build",
+  "bridge": "src",
+  "serve": "npm run serve"
+ },
+ "tags": "",
+ "WailsVersion": "",
+ "CrossCompile": false,
+ "Platform": "",
+ "Architecture": "",
+ "LdFlags": "",
+ "GoPath": "",
+ "UseFirebug": false
+}
