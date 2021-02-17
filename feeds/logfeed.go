@@ -82,7 +82,7 @@ func (f *LogFeed) CheckLogDir(dir string) (valid bool) {
 				break
 			}
 		}
-		if found == false {
+		if !found {
 			valid = false
 			break
 		}
