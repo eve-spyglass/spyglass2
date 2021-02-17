@@ -2,7 +2,10 @@ package main
 
 import (
 	"context"
+	"github.com/leaanthony/mewn"
+	"github.com/wailsapp/wails"
 	"log"
+	"spyglass-2/engine"
 	"spyglass-2/feeds"
 	"time"
 )
@@ -53,23 +56,26 @@ func main() {
 		}
 	}()
 
-	log.Print(1)
+	engine.NOP()
 
 	time.Sleep(10 * time.Minute)
-	// START FRONTEND
+	//START FRONTEND
 
-	//js := mewn.String("./frontend/dist/app.js")
-	//css := mewn.String("./frontend/dist/app.css")
-	//
-	//app := wails.CreateApp(&wails.AppConfig{
-	//	Width:     1024,
-	//	Height:    768,
-	//	Resizable: true,
-	//	Title:     "Spyglass 2",
-	//	JS:        js,
-	//	CSS:       css,
-	//	Colour:    "#ff6666",
-	//})
-	//app.Bind(basic)
-	//app.Run()
+	js := mewn.String("./frontend/dist/app.js")
+	css := mewn.String("./frontend/dist/app.css")
+
+	app := wails.CreateApp(&wails.AppConfig{
+		Width:     1024,
+		Height:    768,
+		Resizable: true,
+		Title:     "Spyglass 2",
+		JS:        js,
+		CSS:       css,
+		Colour:    "#ff6666",
+	})
+	app.Bind(basic)
+	err = app.Run()
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
