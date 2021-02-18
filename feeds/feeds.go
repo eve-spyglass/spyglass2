@@ -29,3 +29,7 @@ type (
 	}
 )
 
+func (r *Report) Hash() string {
+	return r.Message
+}
+

@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"github.com/leaanthony/mewn"
 	"github.com/wailsapp/wails"
 	"log"
@@ -56,7 +57,13 @@ func main() {
 		}
 	}()
 
-	engine.NOP()
+	log.Println("Starting intel engine")
+
+	ie, err := engine.NewIntelEngine()
+	if err != nil{
+		log.Fatalln(fmt.Errorf("failed to init intel engine: %w", err))
+	}
+	_ = ie.CurrentMap
 
 	time.Sleep(10 * time.Minute)
 	//START FRONTEND
