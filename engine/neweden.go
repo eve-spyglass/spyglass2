@@ -2,10 +2,8 @@ package engine
 
 import (
 	"bytes"
+	_ "embed"
 	"encoding/json"
-	"fmt"
-	"github.com/andybalholm/brotli"
-	"io/ioutil"
 )
 
 type (
@@ -63,14 +61,19 @@ type (
 	}
 )
 
+var (
+	//go:embed neweden.json
+	mapdata []byte
+)
+
 func (n NewEden) LoadData() (err error) {
 	raw := bytes.NewReader(mapdata)
-	decompressor := brotli.NewReader(raw)
-	//jdata := json.NewDecoder(decompressor)
-
-	bss, err := ioutil.ReadAll(decompressor)
-	fmt.Println(string(bss))
-	return json.Unmarshal(bss, &n)
-	//err = jdata.Decode(&n)
-	//return err
+	//decompressor, err := gzip.NewReader(raw)
+	//if err != nil {
+	//	return err
+	//}
+	//defer decompressor.Close()
+	jdata := json.NewDecoder(raw)
+	err = jdata.Decode(&n)
+	return err
 }

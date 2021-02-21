@@ -4,12 +4,10 @@ package main
 
 import (
 	"bufio"
-	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"io/ioutil"
-	"github.com/andybalholm/brotli"
 	"log"
 	"net/http"
 	"os"
@@ -319,45 +317,14 @@ func main() {
 	}
 	defer f.Close()
 	bf := bufio.NewWriter(f)
+	//gw := gzip.NewWriter(bf)
 	enc := json.NewEncoder(bf)
 	enc.SetIndent("", "\t")
 	err = enc.Encode(ne)
 	if err != nil {
 		log.Fatalln(err)
 	}
-
-	log.Println("Saving our charts to internal buffer")
-
-	// Now I want to create a go file which has the data embedded within itself
-	//	This will also be compressed using brotli so as to save space
-	var ob bytes.Buffer
-	buw := bufio.NewWriter(&ob)
-	brw := brotli.NewWriterLevel(buw, brotli.BestSpeed)
-	//b64 := base64.NewEncoder(base64.StdEncoding, brw)
-	jw := json.NewEncoder(brw)
-	err = jw.Encode(ne)
-	if err != nil {
-		log.Fatalln(fmt.Errorf("failed to encode json data to compressed bytes: %w", err))
-	}
-	data := ob.Bytes()
-
-	log.Println("Dumping buffer to file")
-
-	md, err := os.Create("mapdata.go")
-	if err != nil {
-		log.Fatalln(fmt.Errorf("failed to create/truncate the mapdata.go file: %w", err))
-	}
-	defer md.Close()
-	err = packageTemplate.ExecuteTemplate(md, "gen", struct {
-		Timestamp time.Time
-		Data      []byte
-	}{
-		Timestamp: time.Now(),
-		Data:      data,
-	})
-	if err != nil {
-		log.Fatalln(fmt.Errorf("failed to execute template: %w", err))
-	}
+	f.Sync()
 
 	log.Println("DONE!")
 

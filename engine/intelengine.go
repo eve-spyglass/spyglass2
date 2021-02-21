@@ -26,7 +26,7 @@ type (
 
 func NewIntelEngine() (*IntelEngine, error) {
 
-	var galaxy NewEden
+	galaxy := make(NewEden)
 	err := galaxy.LoadData()
 	if err != nil {
 		return nil, fmt.Errorf("failed to load galaxy data: %w", err)
@@ -50,7 +50,6 @@ func (ie *IntelEngine) updateMapGraph() error {
 	for _, r := range ie.Galaxy {
 		if r.Name == ie.CurrentMap {
 			// This is us!
-
 			ie.mapGraph = simple.NewUndirectedGraph()
 
 			for _, c := range r.Constellations {
