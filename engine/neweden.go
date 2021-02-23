@@ -1,9 +1,12 @@
 package engine
 
+//go:generate go run -race gen_mapdata.go
+
 import (
 	"bytes"
 	_ "embed"
 	"encoding/json"
+	"errors"
 )
 
 type (
@@ -68,12 +71,22 @@ var (
 
 func (n NewEden) LoadData() (err error) {
 	raw := bytes.NewReader(mapdata)
-	//decompressor, err := gzip.NewReader(raw)
-	//if err != nil {
-	//	return err
-	//}
-	//defer decompressor.Close()
 	jdata := json.NewDecoder(raw)
 	err = jdata.Decode(&n)
 	return err
+}
+
+
+func (ne NewEden) GetSystem(id int32) (System, error) {
+	for _, region := range ne {
+		for _, constellation := range region.Constellations {
+			for _, system := range constellation.Systems{
+				if system.SystemID == id{
+					return system, nil
+				}
+			}
+		}
+	}
+
+	return System{}, errors.New("system not found")
 }
