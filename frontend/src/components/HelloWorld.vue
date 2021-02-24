@@ -1,32 +1,6 @@
 <template>
   <v-container fluid class="px-0">
-    <v-layout>
-      <v-flex xs12 sm6 offset-sm3>
-        <v-card raised="raised" class="pa-4 ma-4">
-          <v-layout justify-center align-center class="pa-4 ma-4">
-            <v-img :src="require('../assets/images/logo.png')"></v-img>
-          </v-layout>
-          <v-card-actions>
-            <v-layout justify-center align-center class="px-0">
-              <v-btn color="blue" @click="getMessage">Press Me</v-btn>
-            </v-layout>
-          </v-card-actions>
-        </v-card>
-      </v-flex>
-    </v-layout>
-    <div class="text-xs-center">
-      <v-dialog v-model="dialog" width="500">
-        <v-card>
-          <v-card-title class="headline" primary-title>Message from Go</v-card-title>
-          <v-card-text>{{message}}</v-card-text>
-          <v-divider></v-divider>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn color="primary" text @click="dialog = false">Awesome</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog>
-    </div>
+    <g v-html="message"></g>
   </v-container>
 </template>
 
@@ -34,19 +8,21 @@
   export default {
     data () {
       return {
-        message: " ",
-        raised: true,
-        dialog: false
+        message: "",
       }
     },
     methods: {
       getMessage: function () {
         var self = this
-        window.backend.basic().then(result => {
+        window.backend.GetCurrentMapSVG().then(result => {
           self.message = result
-          self.dialog = true
         })
       }
+    },
+    mounted: function() {
+      window.setInterval(() => {
+        this.getMessage()
+      }, 5000)
     }
   }
 </script>

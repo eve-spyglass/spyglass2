@@ -111,7 +111,7 @@ func (em *EveMapper) GetMap() string {
 	return em.currentMap
 }
 
-func (em *EveMapper) GetCurrentMapSVG() (string, error) {
+func (em *EveMapper) GetCurrentMapSVG() (string) {
 
 	start := time.Now()
 
@@ -139,7 +139,7 @@ func (em *EveMapper) GetCurrentMapSVG() (string, error) {
 
 		err := em.intelResource.SetMonitoredSystems(systemIDs)
 		if err != nil {
-			return "", err
+			return ""
 		}
 
 		//	Now get the connections list
@@ -225,5 +225,5 @@ func (em *EveMapper) GetCurrentMapSVG() (string, error) {
 
 	log.Printf("Generation took %v", time.Since(start))
 
-	return buf.String(), nil
+	return buf.String()
 }

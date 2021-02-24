@@ -9,7 +9,6 @@ import (
 	"spyglass-2/engine"
 	//"spyglass-2/feeds"
 	"spyglass-2/maps"
-	"time"
 )
 
 func basic() string {
@@ -71,13 +70,13 @@ func main() {
 		log.Fatalln(fmt.Errorf("failed to create mapper: %w", err))
 	}
 
-	em.SetMap("Catch")
+	em.SetMap("Providence")
 
 	em.SetIntelResource(ie)
 
-	fmt.Println(em.GetCurrentMapSVG())
+	_ = em.GetCurrentMapSVG()
 
-	time.Sleep(10 * time.Minute)
+	//time.Sleep(10 * time.Minute)
 	//START FRONTEND
 
 	js := mewn.String("./frontend/dist/app.js")
@@ -93,6 +92,7 @@ func main() {
 		Colour:    "#ff6666",
 	})
 	app.Bind(basic)
+	app.Bind(em.GetCurrentMapSVG)
 	err = app.Run()
 	if err != nil {
 		log.Fatalln(err)
