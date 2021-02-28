@@ -1,0 +1,432 @@
+{
+	"name": "Everyshore",
+	"author": "Dotlan",
+	"description": "The first region that the Federation colonized after Essence was Everyshore. The asteroid belts of this region were found to hold significant amounts of Veldspar and Scordite, which the Federation mined with a vigor never seen before in order to fuel construction projects that their quickly expanding borders required. When the belts were mined to a level that made large scale operations uneconomical, greedy eyes turned towards the planets, intent on mining these for minerals.\r\n\r\nAn incident on a lush jungle planet in the Aclan system forced the government to intervene. Astral Mining, filling a large contract for the Federation Navy, introduced a herbicide into the atmosphere to clear the jungle and enable mining to begin. Outraged at this senseless destruction, where many species of flora and fauna were lost that had not even been studied, prominent ecologists managed to force a bill through the Senate: no planet that supported any life-form was to have its ecosystem tampered with in any way without a license being granted from the Federation Senate. This law became known as The Aclan Agreement and it remains in place to this day.",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30002639": {
+			"id": 30002639,
+			"name": "Adreland",
+			"x": 895,
+			"y": 135,
+			"external": true
+		},
+		"30002648": {
+			"id": 30002648,
+			"name": "Ardene",
+			"x": 775,
+			"y": 720,
+			"external": true
+		},
+		"30002654": {
+			"id": 30002654,
+			"name": "Schoorasana",
+			"x": 65,
+			"y": 480,
+			"external": true
+		},
+		"30002655": {
+			"id": 30002655,
+			"name": "Vylade",
+			"x": 865,
+			"y": 450,
+			"external": true
+		},
+		"30002659": {
+			"id": 30002659,
+			"name": "Dodixie",
+			"x": 900,
+			"y": 330,
+			"external": true
+		},
+		"30002662": {
+			"id": 30002662,
+			"name": "Pulin",
+			"x": 705,
+			"y": 485,
+			"external": true
+		},
+		"30002692": {
+			"id": 30002692,
+			"name": "Jel",
+			"x": 700,
+			"y": 710,
+			"external": true
+		},
+		"30002699": {
+			"id": 30002699,
+			"name": "Brapelille",
+			"x": 615,
+			"y": 690,
+			"external": true
+		},
+		"30002706": {
+			"id": 30002706,
+			"name": "Doussivitte",
+			"x": 965,
+			"y": 195,
+			"external": true
+		},
+		"30002708": {
+			"id": 30002708,
+			"name": "Claysson",
+			"x": 635,
+			"y": 270,
+			"external": true
+		},
+		"30002715": {
+			"id": 30002715,
+			"name": "Bourynes",
+			"x": 710,
+			"y": 200,
+			"external": true
+		},
+		"30002728": {
+			"id": 30002728,
+			"name": "Lermireve",
+			"x": 0,
+			"y": 500,
+			"external": true
+		},
+		"30003009": {
+			"id": 30003009,
+			"name": "Arnatele",
+			"x": 265,
+			"y": 295
+		},
+		"30003010": {
+			"id": 30003010,
+			"name": "Halle",
+			"x": 325,
+			"y": 330
+		},
+		"30003011": {
+			"id": 30003011,
+			"name": "Mormoen",
+			"x": 325,
+			"y": 270
+		},
+		"30003012": {
+			"id": 30003012,
+			"name": "Amattens",
+			"x": 170,
+			"y": 410
+		},
+		"30003013": {
+			"id": 30003013,
+			"name": "Jurlesel",
+			"x": 95,
+			"y": 350
+		},
+		"30003014": {
+			"id": 30003014,
+			"name": "Bereye",
+			"x": 270,
+			"y": 375
+		},
+		"30003015": {
+			"id": 30003015,
+			"name": "Aice",
+			"x": 155,
+			"y": 280
+		},
+		"30003016": {
+			"id": 30003016,
+			"name": "Junsoraert",
+			"x": 190,
+			"y": 340
+		},
+		"30003017": {
+			"id": 30003017,
+			"name": "Harerget",
+			"x": 625,
+			"y": 345
+		},
+		"30003018": {
+			"id": 30003018,
+			"name": "Azer",
+			"x": 565,
+			"y": 400
+		},
+		"30003019": {
+			"id": 30003019,
+			"name": "Cherore",
+			"x": 650,
+			"y": 420
+		},
+		"30003020": {
+			"id": 30003020,
+			"name": "Torvi",
+			"x": 540,
+			"y": 355
+		},
+		"30003021": {
+			"id": 30003021,
+			"name": "Mosson",
+			"x": 590,
+			"y": 455
+		},
+		"30003022": {
+			"id": 30003022,
+			"name": "Mya",
+			"x": 525,
+			"y": 305
+		},
+		"30003023": {
+			"id": 30003023,
+			"name": "Gerper",
+			"x": 535,
+			"y": 245
+		},
+		"30003024": {
+			"id": 30003024,
+			"name": "Marosier",
+			"x": 675,
+			"y": 620
+		},
+		"30003025": {
+			"id": 30003025,
+			"name": "Lirsautton",
+			"x": 775,
+			"y": 580
+		},
+		"30003026": {
+			"id": 30003026,
+			"name": "Blameston",
+			"x": 840,
+			"y": 505
+		},
+		"30003027": {
+			"id": 30003027,
+			"name": "Vaurent",
+			"x": 605,
+			"y": 585
+		},
+		"30003028": {
+			"id": 30003028,
+			"name": "Aclan",
+			"x": 710,
+			"y": 560
+		},
+		"30003029": {
+			"id": 30003029,
+			"name": "Jaschercis",
+			"x": 660,
+			"y": 530
+		},
+		"30003030": {
+			"id": 30003030,
+			"name": "Ardallabier",
+			"x": 755,
+			"y": 655
+		},
+		"30003031": {
+			"id": 30003031,
+			"name": "Athinard",
+			"x": 900,
+			"y": 260
+		},
+		"30003032": {
+			"id": 30003032,
+			"name": "Meves",
+			"x": 815,
+			"y": 295
+		},
+		"30003033": {
+			"id": 30003033,
+			"name": "Ethernity",
+			"x": 780,
+			"y": 235
+		},
+		"30003034": {
+			"id": 30003034,
+			"name": "Mattere",
+			"x": 865,
+			"y": 200
+		},
+		"30003035": {
+			"id": 30003035,
+			"name": "Gicodel",
+			"x": 780,
+			"y": 165
+		},
+		"30003036": {
+			"id": 30003036,
+			"name": "Frarolle",
+			"x": 730,
+			"y": 105
+		},
+		"30003037": {
+			"id": 30003037,
+			"name": "Quier",
+			"x": 625,
+			"y": 55
+		},
+		"30003038": {
+			"id": 30003038,
+			"name": "Atlanins",
+			"x": 470,
+			"y": 600
+		},
+		"30003039": {
+			"id": 30003039,
+			"name": "Leremblompes",
+			"x": 390,
+			"y": 475
+		},
+		"30003040": {
+			"id": 30003040,
+			"name": "Bille",
+			"x": 290,
+			"y": 560
+		},
+		"30003041": {
+			"id": 30003041,
+			"name": "Colcer",
+			"x": 460,
+			"y": 440
+		},
+		"30003042": {
+			"id": 30003042,
+			"name": "Alachene",
+			"x": 390,
+			"y": 535
+		},
+		"30003043": {
+			"id": 30003043,
+			"name": "Uphene",
+			"x": 265,
+			"y": 505
+		},
+		"30003044": {
+			"id": 30003044,
+			"name": "Elarel",
+			"x": 280,
+			"y": 615
+		},
+		"30003045": {
+			"id": 30003045,
+			"name": "Enedore",
+			"x": 280,
+			"y": 195
+		},
+		"30003047": {
+			"id": 30003047,
+			"name": "Averon",
+			"x": 265,
+			"y": 160
+		},
+		"30003048": {
+			"id": 30003048,
+			"name": "Carirgnottin",
+			"x": 180,
+			"y": 90
+		},
+		"30003049": {
+			"id": 30003049,
+			"name": "Laic",
+			"x": 345,
+			"y": 205
+		},
+		"30003050": {
+			"id": 30003050,
+			"name": "Odixie",
+			"x": 265,
+			"y": 90
+		},
+		"30003051": {
+			"id": 30003051,
+			"name": "Antollare",
+			"x": 360,
+			"y": 155
+		},
+		"30003052": {
+			"id": 30003052,
+			"name": "Tolle",
+			"x": 100,
+			"y": 90
+		},
+		"30003053": {
+			"id": 30003053,
+			"name": "Avele",
+			"x": 425,
+			"y": 210
+		},
+		"30003054": {
+			"id": 30003054,
+			"name": "Scuelazyns",
+			"x": 180,
+			"y": 160
+		},
+		"30003055": {
+			"id": 30003055,
+			"name": "Aydoteaux",
+			"x": 25,
+			"y": 90
+		},
+		"30003056": {
+			"id": 30003056,
+			"name": "Muer",
+			"x": 255,
+			"y": 35
+		},
+		"30003057": {
+			"id": 30003057,
+			"name": "Groothese",
+			"x": 185,
+			"y": 620
+		},
+		"30003058": {
+			"id": 30003058,
+			"name": "Olide",
+			"x": 115,
+			"y": 610
+		},
+		"30003059": {
+			"id": 30003059,
+			"name": "Adeel",
+			"x": 85,
+			"y": 645
+		},
+		"30003060": {
+			"id": 30003060,
+			"name": "Mannar",
+			"x": 65,
+			"y": 580
+		},
+		"30003061": {
+			"id": 30003061,
+			"name": "Mormelot",
+			"x": 80,
+			"y": 530
+		},
+		"30003062": {
+			"id": 30003062,
+			"name": "Angatalie",
+			"x": 15,
+			"y": 545
+		},
+		"30004968": {
+			"id": 30004968,
+			"name": "Mies",
+			"x": 345,
+			"y": 370,
+			"external": true
+		},
+		"30005201": {
+			"id": 30005201,
+			"name": "Manarq",
+			"x": 80,
+			"y": 35,
+			"external": true
+		},
+		"30005288": {
+			"id": 30005288,
+			"name": "Girani-Fa",
+			"x": 5,
+			"y": 35,
+			"external": true
+		}
+	}
+}

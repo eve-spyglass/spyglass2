@@ -1,0 +1,505 @@
+{
+	"name": "Placid",
+	"author": "Dotlan",
+	"description": "In reality, Placid is anything but. The southern reaches of the region are home to the notorious Intaki, whose huge emphasis on personal freedom goes some way towards explaining its general lawlessness. The situation is not helped by the Federation's seeming reluctance to invest heavily in the region - a source of some resentment among the Intaki who haven't already fled to Syndicate.\r\n\r\nTo make matters worse, much of what does get earmarked for the region ends up being used to bolster the Federation's increasingly important military presence in Placid's turbulent and far-flung northern extremities, which are constantly under threat.",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30002039": {
+			"id": 30002039,
+			"name": "RQH-MY",
+			"x": 280,
+			"y": 0,
+			"external": true
+		},
+		"30003268": {
+			"id": 30003268,
+			"name": "MHC-R3",
+			"x": 765,
+			"y": 545,
+			"external": true
+		},
+		"30003277": {
+			"id": 30003277,
+			"name": "PF-346",
+			"x": 140,
+			"y": 220,
+			"external": true
+		},
+		"30003323": {
+			"id": 30003323,
+			"name": "TXW-EI",
+			"x": 5,
+			"y": 380,
+			"external": true
+		},
+		"30003787": {
+			"id": 30003787,
+			"name": "Agoze",
+			"x": 830,
+			"y": 425
+		},
+		"30003788": {
+			"id": 30003788,
+			"name": "Intaki",
+			"x": 925,
+			"y": 340
+		},
+		"30003789": {
+			"id": 30003789,
+			"name": "Brarel",
+			"x": 940,
+			"y": 395
+		},
+		"30003790": {
+			"id": 30003790,
+			"name": "Vey",
+			"x": 845,
+			"y": 350
+		},
+		"30003791": {
+			"id": 30003791,
+			"name": "Annancale",
+			"x": 910,
+			"y": 450
+		},
+		"30003792": {
+			"id": 30003792,
+			"name": "Ostingele",
+			"x": 650,
+			"y": 445
+		},
+		"30003793": {
+			"id": 30003793,
+			"name": "Harroule",
+			"x": 725,
+			"y": 485
+		},
+		"30003794": {
+			"id": 30003794,
+			"name": "Stacmon",
+			"x": 595,
+			"y": 570
+		},
+		"30003795": {
+			"id": 30003795,
+			"name": "Covryn",
+			"x": 505,
+			"y": 525
+		},
+		"30003796": {
+			"id": 30003796,
+			"name": "Iges",
+			"x": 595,
+			"y": 620
+		},
+		"30003797": {
+			"id": 30003797,
+			"name": "Dastryns",
+			"x": 675,
+			"y": 570
+		},
+		"30003798": {
+			"id": 30003798,
+			"name": "Slays",
+			"x": 510,
+			"y": 675
+		},
+		"30003799": {
+			"id": 30003799,
+			"name": "Uphallant",
+			"x": 675,
+			"y": 620
+		},
+		"30003800": {
+			"id": 30003800,
+			"name": "Alperaute",
+			"x": 435,
+			"y": 470
+		},
+		"30003801": {
+			"id": 30003801,
+			"name": "Aunsou",
+			"x": 335,
+			"y": 480
+		},
+		"30003802": {
+			"id": 30003802,
+			"name": "Cumemare",
+			"x": 385,
+			"y": 515
+		},
+		"30003803": {
+			"id": 30003803,
+			"name": "Reynire",
+			"x": 330,
+			"y": 435
+		},
+		"30003804": {
+			"id": 30003804,
+			"name": "Pain",
+			"x": 325,
+			"y": 390
+		},
+		"30003805": {
+			"id": 30003805,
+			"name": "Gare",
+			"x": 260,
+			"y": 480
+		},
+		"30003806": {
+			"id": 30003806,
+			"name": "Pelille",
+			"x": 505,
+			"y": 405
+		},
+		"30003807": {
+			"id": 30003807,
+			"name": "Dour",
+			"x": 500,
+			"y": 365
+		},
+		"30003808": {
+			"id": 30003808,
+			"name": "Grispire",
+			"x": 425,
+			"y": 390
+		},
+		"30003809": {
+			"id": 30003809,
+			"name": "Brellystier",
+			"x": 425,
+			"y": 340
+		},
+		"30003810": {
+			"id": 30003810,
+			"name": "Vivanier",
+			"x": 500,
+			"y": 315
+		},
+		"30003811": {
+			"id": 30003811,
+			"name": "Algasienan",
+			"x": 550,
+			"y": 280
+		},
+		"30003812": {
+			"id": 30003812,
+			"name": "Osmallanais",
+			"x": 625,
+			"y": 325
+		},
+		"30003813": {
+			"id": 30003813,
+			"name": "Ivorider",
+			"x": 645,
+			"y": 285
+		},
+		"30003814": {
+			"id": 30003814,
+			"name": "Mollin",
+			"x": 715,
+			"y": 290
+		},
+		"30003815": {
+			"id": 30003815,
+			"name": "Iffrue",
+			"x": 690,
+			"y": 330
+		},
+		"30003816": {
+			"id": 30003816,
+			"name": "Vilinnon",
+			"x": 755,
+			"y": 335
+		},
+		"30003817": {
+			"id": 30003817,
+			"name": "Ommaerrer",
+			"x": 685,
+			"y": 375
+		},
+		"30003818": {
+			"id": 30003818,
+			"name": "Aulbres",
+			"x": 170,
+			"y": 475
+		},
+		"30003819": {
+			"id": 30003819,
+			"name": "Barleguet",
+			"x": 100,
+			"y": 470
+		},
+		"30003820": {
+			"id": 30003820,
+			"name": "Vestouve",
+			"x": 60,
+			"y": 425
+		},
+		"30003821": {
+			"id": 30003821,
+			"name": "Ausmaert",
+			"x": 60,
+			"y": 505
+		},
+		"30003822": {
+			"id": 30003822,
+			"name": "Espigoure",
+			"x": 90,
+			"y": 375
+		},
+		"30003823": {
+			"id": 30003823,
+			"name": "Kenninck",
+			"x": 10,
+			"y": 540
+		},
+		"30003824": {
+			"id": 30003824,
+			"name": "Archavoinet",
+			"x": 575,
+			"y": 235
+		},
+		"30003825": {
+			"id": 30003825,
+			"name": "Eugales",
+			"x": 665,
+			"y": 215
+		},
+		"30003826": {
+			"id": 30003826,
+			"name": "Frarie",
+			"x": 770,
+			"y": 225
+		},
+		"30003827": {
+			"id": 30003827,
+			"name": "Aubenall",
+			"x": 560,
+			"y": 175
+		},
+		"30003828": {
+			"id": 30003828,
+			"name": "Moclinamaud",
+			"x": 735,
+			"y": 180
+		},
+		"30003829": {
+			"id": 30003829,
+			"name": "Renarelle",
+			"x": 635,
+			"y": 160
+		},
+		"30003830": {
+			"id": 30003830,
+			"name": "Orvolle",
+			"x": 195,
+			"y": 170
+		},
+		"30003831": {
+			"id": 30003831,
+			"name": "Osmeden",
+			"x": 110,
+			"y": 160
+		},
+		"30003832": {
+			"id": 30003832,
+			"name": "Adacyne",
+			"x": 30,
+			"y": 150
+		},
+		"30003833": {
+			"id": 30003833,
+			"name": "Oulley",
+			"x": 305,
+			"y": 175
+		},
+		"30003834": {
+			"id": 30003834,
+			"name": "Chardalane",
+			"x": 0,
+			"y": 110
+		},
+		"30003835": {
+			"id": 30003835,
+			"name": "Maut",
+			"x": 90,
+			"y": 115
+		},
+		"30003836": {
+			"id": 30003836,
+			"name": "Vlillirier",
+			"x": 705,
+			"y": 120
+		},
+		"30003837": {
+			"id": 30003837,
+			"name": "Aldranette",
+			"x": 705,
+			"y": 70
+		},
+		"30003838": {
+			"id": 30003838,
+			"name": "Oicx",
+			"x": 815,
+			"y": 90
+		},
+		"30003839": {
+			"id": 30003839,
+			"name": "Evaulon",
+			"x": 630,
+			"y": 45
+		},
+		"30003840": {
+			"id": 30003840,
+			"name": "Anchauttes",
+			"x": 535,
+			"y": 45
+		},
+		"30003841": {
+			"id": 30003841,
+			"name": "Alsavoinon",
+			"x": 820,
+			"y": 140
+		},
+		"30003842": {
+			"id": 30003842,
+			"name": "Esesier",
+			"x": 530,
+			"y": 0
+		},
+		"30003843": {
+			"id": 30003843,
+			"name": "Avaux",
+			"x": 385,
+			"y": 625
+		},
+		"30003844": {
+			"id": 30003844,
+			"name": "Gallusiene",
+			"x": 325,
+			"y": 635
+		},
+		"30003845": {
+			"id": 30003845,
+			"name": "Ruerrotta",
+			"x": 275,
+			"y": 665
+		},
+		"30003846": {
+			"id": 30003846,
+			"name": "Hedoubel",
+			"x": 270,
+			"y": 705
+		},
+		"30003847": {
+			"id": 30003847,
+			"name": "Amoen",
+			"x": 455,
+			"y": 705
+		},
+		"30003848": {
+			"id": 30003848,
+			"name": "Amasiree",
+			"x": 405,
+			"y": 735
+		},
+		"30003849": {
+			"id": 30003849,
+			"name": "Aubonnie",
+			"x": 325,
+			"y": 730
+		},
+		"30003850": {
+			"id": 30003850,
+			"name": "Alparena",
+			"x": 145,
+			"y": 65
+		},
+		"30003851": {
+			"id": 30003851,
+			"name": "Reschard",
+			"x": 230,
+			"y": 60
+		},
+		"30003852": {
+			"id": 30003852,
+			"name": "Arderonne",
+			"x": 340,
+			"y": 65
+		},
+		"30003853": {
+			"id": 30003853,
+			"name": "Mercomesier",
+			"x": 200,
+			"y": 30
+		},
+		"30003854": {
+			"id": 30003854,
+			"name": "Alamel",
+			"x": 395,
+			"y": 30
+		},
+		"30003855": {
+			"id": 30003855,
+			"name": "Mantenault",
+			"x": 360,
+			"y": 0
+		},
+		"30003856": {
+			"id": 30003856,
+			"name": "Athounon",
+			"x": 165,
+			"y": 0
+		},
+		"30003857": {
+			"id": 30003857,
+			"name": "Odamia",
+			"x": 435,
+			"y": 65
+		},
+		"30004046": {
+			"id": 30004046,
+			"name": "F7C-H0",
+			"x": 910,
+			"y": 160,
+			"external": true
+		},
+		"30004975": {
+			"id": 30004975,
+			"name": "Mesybier",
+			"x": 220,
+			"y": 230,
+			"external": true
+		},
+		"30005300": {
+			"id": 30005300,
+			"name": "Loes",
+			"x": 825,
+			"y": 465,
+			"external": true
+		},
+		"30005307": {
+			"id": 30005307,
+			"name": "Aidart",
+			"x": 480,
+			"y": 595,
+			"external": true
+		},
+		"30045319": {
+			"id": 30045319,
+			"name": "Eha",
+			"x": 825,
+			"y": 50,
+			"external": true
+		},
+		"30045344": {
+			"id": 30045344,
+			"name": "Nennamaila",
+			"x": 725,
+			"y": 30,
+			"external": true
+		}
+	}
+}

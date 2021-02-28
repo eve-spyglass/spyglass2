@@ -1,0 +1,543 @@
+{
+	"name": "Deklein",
+	"author": "Dotlan",
+	"description": "Deklein is a narrow band of stars loosely connected by some of the most ancient gates outside of empire space. Reminiscent of a skeletal finger pointing out toward the void, it is such a remote region that some of the gates found when the area was first explored are still in use. While in most regions gate crews swap out every five years or so, in Deklein some of these ancient gates have been run by the same family for hundreds of years.\r\n\r\nThese families have intricate knowledge of their gates and the network they're connected to. It was once the practice that aspiring gatemen would travel to Deklein to do their year and come back “Deklein-trained” – a title of some honor which would almost guarantee them a chief gate operator position upon their return. Of course, some never would return...\r\n\r\nWith the gradual influx of heavy Gurista presence in the area this practice ceased, although the families still exist, keeping the gate network running and passing on their extensive knowledge to any gate operator crazy enough to run the gauntlet of dangers to reach them.",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30001266": {
+			"id": 30001266,
+			"name": "9-R6GU",
+			"x": 610,
+			"y": 555,
+			"external": true
+		},
+		"30001336": {
+			"id": 30001336,
+			"name": "WLF-D3",
+			"x": 945,
+			"y": 5,
+			"external": true
+		},
+		"30001997": {
+			"id": 30001997,
+			"name": "U-INPD",
+			"x": 920,
+			"y": 525,
+			"external": true
+		},
+		"30002889": {
+			"id": 30002889,
+			"name": "4U90-Z",
+			"x": 580,
+			"y": 510
+		},
+		"30002890": {
+			"id": 30002890,
+			"name": "T-945F",
+			"x": 510,
+			"y": 535
+		},
+		"30002891": {
+			"id": 30002891,
+			"name": "FO8M-2",
+			"x": 515,
+			"y": 475
+		},
+		"30002892": {
+			"id": 30002892,
+			"name": "AD-CBT",
+			"x": 600,
+			"y": 475
+		},
+		"30002893": {
+			"id": 30002893,
+			"name": "QPO-WI",
+			"x": 525,
+			"y": 440
+		},
+		"30002894": {
+			"id": 30002894,
+			"name": "R8S-1K",
+			"x": 455,
+			"y": 510
+		},
+		"30002895": {
+			"id": 30002895,
+			"name": "94-H3F",
+			"x": 585,
+			"y": 405
+		},
+		"30002896": {
+			"id": 30002896,
+			"name": "CU9-T0",
+			"x": 640,
+			"y": 440
+		},
+		"30002897": {
+			"id": 30002897,
+			"name": "XCF-8N",
+			"x": 635,
+			"y": 375
+		},
+		"30002898": {
+			"id": 30002898,
+			"name": "FMB-JP",
+			"x": 695,
+			"y": 395
+		},
+		"30002899": {
+			"id": 30002899,
+			"name": "0P-F3K",
+			"x": 710,
+			"y": 350
+		},
+		"30002900": {
+			"id": 30002900,
+			"name": "K5F-Z2",
+			"x": 730,
+			"y": 310
+		},
+		"30002901": {
+			"id": 30002901,
+			"name": "TXME-A",
+			"x": 760,
+			"y": 405
+		},
+		"30002902": {
+			"id": 30002902,
+			"name": "YA0-XJ",
+			"x": 875,
+			"y": 425
+		},
+		"30002903": {
+			"id": 30002903,
+			"name": "2-KF56",
+			"x": 875,
+			"y": 380
+		},
+		"30002904": {
+			"id": 30002904,
+			"name": "VFK-IV",
+			"x": 945,
+			"y": 335
+		},
+		"30002905": {
+			"id": 30002905,
+			"name": "2R-CRW",
+			"x": 945,
+			"y": 380
+		},
+		"30002906": {
+			"id": 30002906,
+			"name": "CCP-US",
+			"x": 945,
+			"y": 425
+		},
+		"30002907": {
+			"id": 30002907,
+			"name": "II-5O9",
+			"x": 945,
+			"y": 295
+		},
+		"30002908": {
+			"id": 30002908,
+			"name": "I30-3A",
+			"x": 840,
+			"y": 290
+		},
+		"30002909": {
+			"id": 30002909,
+			"name": "2O9G-D",
+			"x": 770,
+			"y": 270
+		},
+		"30002910": {
+			"id": 30002910,
+			"name": "NC-N3F",
+			"x": 785,
+			"y": 220
+		},
+		"30002911": {
+			"id": 30002911,
+			"name": "JU-OWQ",
+			"x": 680,
+			"y": 260
+		},
+		"30002912": {
+			"id": 30002912,
+			"name": "S-DN5M",
+			"x": 690,
+			"y": 210
+		},
+		"30002913": {
+			"id": 30002913,
+			"name": "MXX5-9",
+			"x": 610,
+			"y": 270
+		},
+		"30002914": {
+			"id": 30002914,
+			"name": "ZZZR-5",
+			"x": 615,
+			"y": 220
+		},
+		"30002915": {
+			"id": 30002915,
+			"name": "C7Y-7Z",
+			"x": 945,
+			"y": 210
+		},
+		"30002916": {
+			"id": 30002916,
+			"name": "X-Z4DA",
+			"x": 945,
+			"y": 170
+		},
+		"30002917": {
+			"id": 30002917,
+			"name": "3OAT-Q",
+			"x": 945,
+			"y": 130
+		},
+		"30002918": {
+			"id": 30002918,
+			"name": "N-TFXK",
+			"x": 945,
+			"y": 90
+		},
+		"30002919": {
+			"id": 30002919,
+			"name": "33RB-O",
+			"x": 870,
+			"y": 150
+		},
+		"30002920": {
+			"id": 30002920,
+			"name": "DKUK-G",
+			"x": 945,
+			"y": 50
+		},
+		"30002921": {
+			"id": 30002921,
+			"name": "3QE-9Q",
+			"x": 530,
+			"y": 290
+		},
+		"30002922": {
+			"id": 30002922,
+			"name": "E-FIC0",
+			"x": 510,
+			"y": 250
+		},
+		"30002923": {
+			"id": 30002923,
+			"name": "ZOYW-O",
+			"x": 410,
+			"y": 350
+		},
+		"30002924": {
+			"id": 30002924,
+			"name": "85-B52",
+			"x": 545,
+			"y": 200
+		},
+		"30002925": {
+			"id": 30002925,
+			"name": "YZ-UKA",
+			"x": 465,
+			"y": 225
+		},
+		"30002926": {
+			"id": 30002926,
+			"name": "RO0-AF",
+			"x": 360,
+			"y": 390
+		},
+		"30002927": {
+			"id": 30002927,
+			"name": "5W3-DG",
+			"x": 310,
+			"y": 470
+		},
+		"30002928": {
+			"id": 30002928,
+			"name": "LT-DRO",
+			"x": 300,
+			"y": 540
+		},
+		"30002929": {
+			"id": 30002929,
+			"name": "7T6P-C",
+			"x": 365,
+			"y": 480
+		},
+		"30002930": {
+			"id": 30002930,
+			"name": "8S28-3",
+			"x": 310,
+			"y": 600
+		},
+		"30002931": {
+			"id": 30002931,
+			"name": "E3UY-6",
+			"x": 215,
+			"y": 555
+		},
+		"30002932": {
+			"id": 30002932,
+			"name": "LEK-N5",
+			"x": 210,
+			"y": 485
+		},
+		"30002933": {
+			"id": 30002933,
+			"name": "AGG-NR",
+			"x": 135,
+			"y": 505
+		},
+		"30002934": {
+			"id": 30002934,
+			"name": "0V0R-R",
+			"x": 145,
+			"y": 450
+		},
+		"30002935": {
+			"id": 30002935,
+			"name": "O-2RNZ",
+			"x": 75,
+			"y": 550
+		},
+		"30002936": {
+			"id": 30002936,
+			"name": "OWXT-5",
+			"x": 215,
+			"y": 420
+		},
+		"30002937": {
+			"id": 30002937,
+			"name": "3JN9-Q",
+			"x": 50,
+			"y": 595
+		},
+		"30002938": {
+			"id": 30002938,
+			"name": "3T7-M8",
+			"x": 295,
+			"y": 285
+		},
+		"30002939": {
+			"id": 30002939,
+			"name": "WUZ-WM",
+			"x": 335,
+			"y": 230
+		},
+		"30002940": {
+			"id": 30002940,
+			"name": "MZ1E-P",
+			"x": 230,
+			"y": 285
+		},
+		"30002941": {
+			"id": 30002941,
+			"name": "43B-O1",
+			"x": 420,
+			"y": 180
+		},
+		"30002942": {
+			"id": 30002942,
+			"name": "J1AU-9",
+			"x": 165,
+			"y": 285
+		},
+		"30002943": {
+			"id": 30002943,
+			"name": "X3-PBC",
+			"x": 100,
+			"y": 285
+		},
+		"30002944": {
+			"id": 30002944,
+			"name": "4N-BUI",
+			"x": 335,
+			"y": 180
+		},
+		"30002945": {
+			"id": 30002945,
+			"name": "N2IS-B",
+			"x": 245,
+			"y": 230
+		},
+		"30002946": {
+			"id": 30002946,
+			"name": "XCBK-X",
+			"x": 295,
+			"y": 40
+		},
+		"30002947": {
+			"id": 30002947,
+			"name": "GY5-26",
+			"x": 215,
+			"y": 90
+		},
+		"30002948": {
+			"id": 30002948,
+			"name": "VPLL-N",
+			"x": 245,
+			"y": 180
+		},
+		"30002949": {
+			"id": 30002949,
+			"name": "9CK-KZ",
+			"x": 370,
+			"y": 90
+		},
+		"30002950": {
+			"id": 30002950,
+			"name": "5S-KXA",
+			"x": 420,
+			"y": 130
+		},
+		"30002951": {
+			"id": 30002951,
+			"name": "U-TJ7Y",
+			"x": 100,
+			"y": 210
+		},
+		"30002952": {
+			"id": 30002952,
+			"name": "A4L-A2",
+			"x": 100,
+			"y": 165
+		},
+		"30002953": {
+			"id": 30002953,
+			"name": "CZDJ-1",
+			"x": 100,
+			"y": 120
+		},
+		"30002954": {
+			"id": 30002954,
+			"name": "RG9-7U",
+			"x": 30,
+			"y": 95
+		},
+		"30002955": {
+			"id": 30002955,
+			"name": "UJY-HE",
+			"x": 100,
+			"y": 70
+		},
+		"30002956": {
+			"id": 30002956,
+			"name": "UEJX-G",
+			"x": 30,
+			"y": 165
+		},
+		"30003678": {
+			"id": 30003678,
+			"name": "CR-IFM",
+			"x": 735,
+			"y": 520,
+			"external": true
+		},
+		"30003679": {
+			"id": 30003679,
+			"name": "HHK-VL",
+			"x": 785,
+			"y": 475,
+			"external": true
+		},
+		"30003680": {
+			"id": 30003680,
+			"name": "P-33KR",
+			"x": 790,
+			"y": 565,
+			"external": true
+		},
+		"30003681": {
+			"id": 30003681,
+			"name": "DO6H-Q",
+			"x": 845,
+			"y": 525,
+			"external": true
+		},
+		"30003682": {
+			"id": 30003682,
+			"name": "DW-T2I",
+			"x": 720,
+			"y": 615,
+			"external": true
+		},
+		"30003683": {
+			"id": 30003683,
+			"name": "O-CNPR",
+			"x": 640,
+			"y": 660,
+			"external": true
+		},
+		"30003684": {
+			"id": 30003684,
+			"name": "L-SCBU",
+			"x": 600,
+			"y": 620,
+			"external": true
+		},
+		"30003685": {
+			"id": 30003685,
+			"name": "VRH-H7",
+			"x": 645,
+			"y": 705,
+			"external": true
+		},
+		"30003686": {
+			"id": 30003686,
+			"name": "O1Y-ED",
+			"x": 535,
+			"y": 660,
+			"external": true
+		},
+		"30003687": {
+			"id": 30003687,
+			"name": "K4YZ-Y",
+			"x": 430,
+			"y": 660,
+			"external": true
+		},
+		"30003688": {
+			"id": 30003688,
+			"name": "X36Y-G",
+			"x": 535,
+			"y": 705,
+			"external": true
+		},
+		"30003689": {
+			"id": 30003689,
+			"name": "L-C3O7",
+			"x": 430,
+			"y": 705,
+			"external": true
+		},
+		"30003690": {
+			"id": 30003690,
+			"name": "YKSC-A",
+			"x": 535,
+			"y": 740,
+			"external": true
+		},
+		"30003697": {
+			"id": 30003697,
+			"name": "C4C-Z4",
+			"x": 330,
+			"y": 725,
+			"external": true
+		},
+		"30004396": {
+			"id": 30004396,
+			"name": "Y-1918",
+			"x": 100,
+			"y": 20,
+			"external": true
+		}
+	}
+}

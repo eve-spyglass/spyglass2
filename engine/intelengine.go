@@ -112,12 +112,13 @@ func (ie *IntelEngine) LastUpdated() map[int32]time.Duration {
 
 //	SetSystems will notify the IntelResource which systems to alarm upon
 func (ie *IntelEngine) SetMonitoredSystems(systems []int32) error {
+	ie.monitoredSystems = make([]int32, len(systems))
 	for _, system := range systems {
 		sys, err := ie.Galaxy.GetSystem(system)
-		if err == nil {
-			// TODO this is misnomer for happy path programming
-			ie.monitoredSystems = append(ie.monitoredSystems, sys.SystemID)
+		if err != nil {
+			continue
 		}
+		ie.monitoredSystems = append(ie.monitoredSystems, sys.SystemID)
 	}
 	return nil
 }

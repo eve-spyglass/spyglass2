@@ -70,11 +70,10 @@ func main() {
 		log.Fatalln(fmt.Errorf("failed to create mapper: %w", err))
 	}
 
-	em.SetMap("Providence")
-
 	em.SetIntelResource(ie)
 
-	_ = em.GetCurrentMapSVG()
+	em.SetMap("Providence")
+	//_ = em.GetCurrentMapSVG()
 
 	//time.Sleep(10 * time.Minute)
 	//START FRONTEND
@@ -92,7 +91,7 @@ func main() {
 		Colour:    "#ff6666",
 	})
 	app.Bind(basic)
-	app.Bind(em.GetCurrentMapSVG)
+	app.Bind(em)
 	err = app.Run()
 	if err != nil {
 		log.Fatalln(err)

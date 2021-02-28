@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="px-0">
-    <g v-html="message"></g>
+    <div v-html="message" style="background-color: azure"></div>
   </v-container>
 </template>
 
@@ -14,7 +14,7 @@
     methods: {
       getMessage: function () {
         var self = this
-        window.backend.GetCurrentMapSVG().then(result => {
+        window.backend.EveMapper.GetCurrentMapSVG().then(result => {
           self.message = result
         })
       }
@@ -22,7 +22,7 @@
     mounted: function() {
       window.setInterval(() => {
         this.getMessage()
-      }, 5000)
+      }, 1000)
     }
   }
 </script>

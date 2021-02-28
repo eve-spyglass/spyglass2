@@ -1,0 +1,288 @@
+{
+	"name": "Omist",
+	"author": "Dotlan",
+	"description": "Out in Omist, civilization gives way to survival. Here, it is not one corporation against another. It is one tribe fighting in a blood war against another, not out of differing ideologies or any higher reasoning. It is only for the basest necessities of humanity that men wage war in Omist. Such is the way of life on the frontier's frontier. It is dark, brutal, and unforgiving. In a way, Omist is the rest of the galaxy, distilled down to its most elementary nature. Those who can survive and thrive here seem as untamed gods to those who luxuriate in more civilized space.",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30004423": {
+			"id": 30004423,
+			"name": "TSG-NO",
+			"x": 0,
+			"y": 55,
+			"external": true
+		},
+		"30004486": {
+			"id": 30004486,
+			"name": "6-ELQP",
+			"x": 895,
+			"y": 60,
+			"external": true
+		},
+		"30004882": {
+			"id": 30004882,
+			"name": "ZO-P5K",
+			"x": 700,
+			"y": 70,
+			"external": true
+		},
+		"30004884": {
+			"id": 30004884,
+			"name": "9MWZ-B",
+			"x": 0,
+			"y": 110
+		},
+		"30004885": {
+			"id": 30004885,
+			"name": "LS-QLX",
+			"x": 0,
+			"y": 160
+		},
+		"30004886": {
+			"id": 30004886,
+			"name": "S-XZHU",
+			"x": 80,
+			"y": 110
+		},
+		"30004887": {
+			"id": 30004887,
+			"name": "CO-7BI",
+			"x": 0,
+			"y": 220
+		},
+		"30004888": {
+			"id": 30004888,
+			"name": "ZJG-7D",
+			"x": 25,
+			"y": 275
+		},
+		"30004889": {
+			"id": 30004889,
+			"name": "C-WPWH",
+			"x": 80,
+			"y": 160
+		},
+		"30004890": {
+			"id": 30004890,
+			"name": "VULA-I",
+			"x": 155,
+			"y": 295
+		},
+		"30004891": {
+			"id": 30004891,
+			"name": "R2TJ-1",
+			"x": 135,
+			"y": 340
+		},
+		"30004892": {
+			"id": 30004892,
+			"name": "G-B3PR",
+			"x": 155,
+			"y": 235
+		},
+		"30004893": {
+			"id": 30004893,
+			"name": "73-JQO",
+			"x": 60,
+			"y": 375
+		},
+		"30004894": {
+			"id": 30004894,
+			"name": "XPUM-L",
+			"x": 245,
+			"y": 235
+		},
+		"30004895": {
+			"id": 30004895,
+			"name": "KR8-27",
+			"x": 245,
+			"y": 295
+		},
+		"30004896": {
+			"id": 30004896,
+			"name": "LQ-AHE",
+			"x": 170,
+			"y": 385
+		},
+		"30004897": {
+			"id": 30004897,
+			"name": "LOI-L1",
+			"x": 330,
+			"y": 295
+		},
+		"30004898": {
+			"id": 30004898,
+			"name": "Y-MSJN",
+			"x": 310,
+			"y": 390
+		},
+		"30004899": {
+			"id": 30004899,
+			"name": "MJ-X5V",
+			"x": 350,
+			"y": 450
+		},
+		"30004900": {
+			"id": 30004900,
+			"name": "3FKU-H",
+			"x": 240,
+			"y": 445
+		},
+		"30004901": {
+			"id": 30004901,
+			"name": "M9-FIB",
+			"x": 285,
+			"y": 510
+		},
+		"30004902": {
+			"id": 30004902,
+			"name": "D2EZ-X",
+			"x": 270,
+			"y": 580
+		},
+		"30004903": {
+			"id": 30004903,
+			"name": "DJK-67",
+			"x": 230,
+			"y": 655
+		},
+		"30004904": {
+			"id": 30004904,
+			"name": "AXDX-F",
+			"x": 490,
+			"y": 295
+		},
+		"30004905": {
+			"id": 30004905,
+			"name": "J-4FNO",
+			"x": 415,
+			"y": 335
+		},
+		"30004906": {
+			"id": 30004906,
+			"name": "PEM-LC",
+			"x": 490,
+			"y": 370
+		},
+		"30004907": {
+			"id": 30004907,
+			"name": "X-EHHD",
+			"x": 490,
+			"y": 225
+		},
+		"30004908": {
+			"id": 30004908,
+			"name": "6T3I-L",
+			"x": 575,
+			"y": 370
+		},
+		"30004909": {
+			"id": 30004909,
+			"name": "QSF-EJ",
+			"x": 575,
+			"y": 295
+		},
+		"30004910": {
+			"id": 30004910,
+			"name": "L-AS00",
+			"x": 575,
+			"y": 225
+		},
+		"30004911": {
+			"id": 30004911,
+			"name": "NZPK-G",
+			"x": 525,
+			"y": 460
+		},
+		"30004912": {
+			"id": 30004912,
+			"name": "K-1OY3",
+			"x": 530,
+			"y": 515
+		},
+		"30004913": {
+			"id": 30004913,
+			"name": "MMUF-8",
+			"x": 610,
+			"y": 540
+		},
+		"30004914": {
+			"id": 30004914,
+			"name": "99-0GS",
+			"x": 620,
+			"y": 620
+		},
+		"30004915": {
+			"id": 30004915,
+			"name": "X-3AUU",
+			"x": 560,
+			"y": 665
+		},
+		"30004916": {
+			"id": 30004916,
+			"name": "H90-C9",
+			"x": 480,
+			"y": 550
+		},
+		"30004917": {
+			"id": 30004917,
+			"name": "0DD-MH",
+			"x": 710,
+			"y": 625
+		},
+		"30004918": {
+			"id": 30004918,
+			"name": "RI-JB1",
+			"x": 490,
+			"y": 685
+		},
+		"30004919": {
+			"id": 30004919,
+			"name": "NQH-MR",
+			"x": 695,
+			"y": 535
+		},
+		"30004920": {
+			"id": 30004920,
+			"name": "1I6F-9",
+			"x": 755,
+			"y": 295
+		},
+		"30004921": {
+			"id": 30004921,
+			"name": "Z-7OK1",
+			"x": 820,
+			"y": 275
+		},
+		"30004922": {
+			"id": 30004922,
+			"name": "UEP0-A",
+			"x": 860,
+			"y": 240
+		},
+		"30004923": {
+			"id": 30004923,
+			"name": "66-PMM",
+			"x": 910,
+			"y": 205
+		},
+		"30004924": {
+			"id": 30004924,
+			"name": "OKEO-X",
+			"x": 915,
+			"y": 120
+		},
+		"30004925": {
+			"id": 30004925,
+			"name": "7-8EOE",
+			"x": 835,
+			"y": 185
+		},
+		"30004926": {
+			"id": 30004926,
+			"name": "7L9-ZC",
+			"x": 730,
+			"y": 130
+		}
+	}
+}

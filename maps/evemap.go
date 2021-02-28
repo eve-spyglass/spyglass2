@@ -1,13 +1,11 @@
 package maps
 
-//go:generate go run -race gen_maps.go
-
 import (
 	"bytes"
+	"embed"
 	_ "embed"
 	"encoding/json"
 	"errors"
-	"fmt"
 	svg "github.com/ajstarks/svgo"
 	"golang.org/x/exp/rand"
 	"log"
@@ -20,7 +18,7 @@ import (
 type (
 	EveMapper struct {
 		currentMap  string
-		definitions mapCollection
+		definitions spyglassMapsCollection
 		connections []string
 
 		intelResource engine.IntelResource
@@ -38,12 +36,12 @@ type (
 		Y  int   `json:"y"`
 	}
 
-	spyglassMapsCollection map[string]eveMap
+	spyglassMapsCollection map[string]spyglassMap
 
 	spyglassMap struct {
 		Systems map[int32]spyglassSystem
-		Width int32
-		Height int32
+		Width int
+		Height int
 
 
 		Name string
@@ -55,26 +53,48 @@ type (
 		ID   int32  `json:"id"`
 		Name string `json:"name"`
 		Icon string `json:"icon,omitempty"`
-		X    int32  `json:"x"`
-		Y    int32  `json:"y"`
+		X    int  `json:"x"`
+		Y    int  `json:"y"`
 		External bool `json:"external,omitempty"`
 	}
 )
 
 var (
-	//go:embed maplayout.json
-	mapdefs []byte
+	//go:embed maps/*.json
+	mapdefs embed.FS
 
 	errMapNotDefined = errors.New("map not defined")
 )
 
 func NewEveMapper() (*EveMapper, error) {
 
-	col := make(mapCollection)
-	err := json.Unmarshal(mapdefs, &col)
+	col := make(spyglassMapsCollection)
+
+	fs, err := mapdefs.ReadDir("maps")
 	if err != nil {
-		return nil, fmt.Errorf("failed to decode mapdefs: %w", err)
+		return nil, err
 	}
+
+	for _, fn := range fs {
+		f, err := mapdefs.ReadFile("maps/" + fn.Name())
+		if err != nil {
+			log.Printf("WARN: fs access: %s", err.Error())
+			continue
+		}
+
+		var def spyglassMap
+
+		err = json.Unmarshal(f, &def)
+		if err != nil {
+			log.Printf("WARN: failed to parse map: %s", err.Error())
+			continue
+		}
+
+		log.Printf("MAPS: loaded map %s with %d systems", def.Name, len(def.Systems))
+
+		col[def.Name] = def
+	}
+
 
 	mapper := &EveMapper{
 		definitions: col,
@@ -100,10 +120,36 @@ func (em *EveMapper) GetAvailableMaps() (maps []string) {
 }
 
 func (em *EveMapper) SetMap(m string) error {
-	if _, ok := em.definitions[m]; !ok {
+	var mp spyglassMap
+	var ok bool
+	if mp, ok = em.definitions[m]; !ok {
 		return errMapNotDefined
 	}
 	em.currentMap = m
+
+	// Load connections from intel resource if it exists
+	if em.intelResource != nil {
+		log.Println("IR is available")
+		//	Make sure we have the correct systems monitored
+		systemIDs := make([]int32, len(mp.Systems))
+		for id := range mp.Systems {
+			systemIDs = append(systemIDs, id)
+		}
+
+		err := em.intelResource.SetMonitoredSystems(systemIDs)
+		if err != nil {
+			return err
+		}
+
+		//	Now get the connections list
+		em.connections = em.intelResource.GetJumps()
+
+		log.Println(len(em.connections))
+
+	} else {
+		log.Println("IR unavailable")
+	}
+
 	return nil
 }
 
@@ -119,36 +165,13 @@ func (em *EveMapper) GetCurrentMapSVG() (string) {
 	const systemHeight = 22
 	const systemRounded = 10
 
-	var mp eveMap
+	var mp spyglassMap
 
 	for s, m := range em.definitions {
 		if s == em.currentMap {
 			mp = m
 			break
 		}
-	}
-
-	// Load connections from intel resource if it exists
-	if em.intelResource != nil {
-		log.Println("IR is available")
-		//	Make sure we have the correct systems monitored
-		systemIDs := make([]int32, len(mp.Systems))
-		for id := range mp.Systems {
-			systemIDs = append(systemIDs, id)
-		}
-
-		err := em.intelResource.SetMonitoredSystems(systemIDs)
-		if err != nil {
-			return ""
-		}
-
-		//	Now get the connections list
-		em.connections = em.intelResource.GetJumps()
-
-		log.Println(len(em.connections))
-
-	} else {
-		log.Println("IR unavailable")
 	}
 
 	var buf bytes.Buffer
@@ -205,7 +228,11 @@ func (em *EveMapper) GetCurrentMapSVG() (string) {
 		if status {
 			style = "fill:rgb(255,128,128);stroke:rgb(0,0,0);stroke-width:1px"
 		}
-		canvas.Roundrect(s.X, s.Y, systemWidth, systemHeight, systemRounded, systemRounded, style)
+		rnd := systemRounded
+		if s.External {
+			rnd = 0
+		}
+		canvas.Roundrect(s.X, s.Y, systemWidth, systemHeight, rnd, systemRounded, style)
 
 		//	create the system name text
 		name := strconv.Itoa(int(s.ID))

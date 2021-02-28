@@ -1,0 +1,288 @@
+{
+	"name": "Solitude",
+	"author": "Dotlan",
+	"description": "Despite its name, Solitude is hardly peaceful and quiet. Physically separated from the rest of the Federation it lies wedged between the Syndicate and the Amarr Empire. But for such a small, segregated sector of space, Solitude commands a great deal of influence in the Federation. Not only for its strategic location but the fact that many of the Federation's most influential and charismatic politicians come from Solitude. Over 15% of the current Senate, such as former Presidential candidate Senator Blaque, either represent Solitude or were born in the region and later migrated to others. This, some speculate, is what has led to the somewhat more warlike and isolationist tendencies within some quarters of the Federations politics.",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30003307": {
+			"id": 30003307,
+			"name": "Y9G-KS",
+			"x": 765,
+			"y": 275,
+			"external": true
+		},
+		"30003345": {
+			"id": 30003345,
+			"name": "D85-VD",
+			"x": 15,
+			"y": 195,
+			"external": true
+		},
+		"30003565": {
+			"id": 30003565,
+			"name": "Conomette",
+			"x": 645,
+			"y": 265
+		},
+		"30003566": {
+			"id": 30003566,
+			"name": "Aimoguier",
+			"x": 660,
+			"y": 205
+		},
+		"30003567": {
+			"id": 30003567,
+			"name": "Yveve",
+			"x": 555,
+			"y": 265
+		},
+		"30003568": {
+			"id": 30003568,
+			"name": "Meunvon",
+			"x": 515,
+			"y": 225
+		},
+		"30003569": {
+			"id": 30003569,
+			"name": "Cadelanne",
+			"x": 700,
+			"y": 165
+		},
+		"30003570": {
+			"id": 30003570,
+			"name": "Elore",
+			"x": 470,
+			"y": 265
+		},
+		"30003571": {
+			"id": 30003571,
+			"name": "Anckee",
+			"x": 380,
+			"y": 265
+		},
+		"30003572": {
+			"id": 30003572,
+			"name": "Vevelonel",
+			"x": 380,
+			"y": 220
+		},
+		"30003573": {
+			"id": 30003573,
+			"name": "Pertnineere",
+			"x": 830,
+			"y": 325
+		},
+		"30003574": {
+			"id": 30003574,
+			"name": "Boystin",
+			"x": 820,
+			"y": 400
+		},
+		"30003575": {
+			"id": 30003575,
+			"name": "Lour",
+			"x": 695,
+			"y": 400
+		},
+		"30003576": {
+			"id": 30003576,
+			"name": "Maire",
+			"x": 670,
+			"y": 480
+		},
+		"30003577": {
+			"id": 30003577,
+			"name": "Oerse",
+			"x": 800,
+			"y": 460
+		},
+		"30003578": {
+			"id": 30003578,
+			"name": "Octanneve",
+			"x": 570,
+			"y": 495
+		},
+		"30003579": {
+			"id": 30003579,
+			"name": "Larryn",
+			"x": 750,
+			"y": 590
+		},
+		"30003580": {
+			"id": 30003580,
+			"name": "Niballe",
+			"x": 645,
+			"y": 575
+		},
+		"30003581": {
+			"id": 30003581,
+			"name": "Postouvin",
+			"x": 545,
+			"y": 570
+		},
+		"30003582": {
+			"id": 30003582,
+			"name": "Odinesyn",
+			"x": 450,
+			"y": 570
+		},
+		"30003583": {
+			"id": 30003583,
+			"name": "Weraroix",
+			"x": 695,
+			"y": 645
+		},
+		"30003584": {
+			"id": 30003584,
+			"name": "Sarline",
+			"x": 550,
+			"y": 660
+		},
+		"30003585": {
+			"id": 30003585,
+			"name": "Aeter",
+			"x": 450,
+			"y": 700
+		},
+		"30003586": {
+			"id": 30003586,
+			"name": "Gererique",
+			"x": 355,
+			"y": 585
+		},
+		"30003587": {
+			"id": 30003587,
+			"name": "Harner",
+			"x": 450,
+			"y": 640
+		},
+		"30003588": {
+			"id": 30003588,
+			"name": "Yvaeroure",
+			"x": 425,
+			"y": 505
+		},
+		"30003589": {
+			"id": 30003589,
+			"name": "Vecodie",
+			"x": 340,
+			"y": 490
+		},
+		"30003590": {
+			"id": 30003590,
+			"name": "Arasare",
+			"x": 270,
+			"y": 420
+		},
+		"30003591": {
+			"id": 30003591,
+			"name": "Yvelet",
+			"x": 315,
+			"y": 365
+		},
+		"30003592": {
+			"id": 30003592,
+			"name": "Lazer",
+			"x": 175,
+			"y": 420
+		},
+		"30003593": {
+			"id": 30003593,
+			"name": "Stoure",
+			"x": 105,
+			"y": 515
+		},
+		"30003594": {
+			"id": 30003594,
+			"name": "Heluene",
+			"x": 240,
+			"y": 265
+		},
+		"30003595": {
+			"id": 30003595,
+			"name": "Arittant",
+			"x": 240,
+			"y": 215
+		},
+		"30003596": {
+			"id": 30003596,
+			"name": "Oruse",
+			"x": 195,
+			"y": 320
+		},
+		"30003597": {
+			"id": 30003597,
+			"name": "Hare",
+			"x": 170,
+			"y": 265
+		},
+		"30003598": {
+			"id": 30003598,
+			"name": "Ogaria",
+			"x": 110,
+			"y": 305
+		},
+		"30003599": {
+			"id": 30003599,
+			"name": "Faurulle",
+			"x": 45,
+			"y": 265
+		},
+		"30003600": {
+			"id": 30003600,
+			"name": "Agaullores",
+			"x": 45,
+			"y": 340
+		},
+		"30003601": {
+			"id": 30003601,
+			"name": "Babirmoult",
+			"x": 110,
+			"y": 215
+		},
+		"30003602": {
+			"id": 30003602,
+			"name": "Ratillose",
+			"x": 380,
+			"y": 150
+		},
+		"30003603": {
+			"id": 30003603,
+			"name": "Ondree",
+			"x": 380,
+			"y": 105
+		},
+		"30003604": {
+			"id": 30003604,
+			"name": "Pochelympe",
+			"x": 380,
+			"y": 60
+		},
+		"30003605": {
+			"id": 30003605,
+			"name": "Eggheron",
+			"x": 335,
+			"y": 15
+		},
+		"30003606": {
+			"id": 30003606,
+			"name": "Toustain",
+			"x": 290,
+			"y": 60
+		},
+		"30003607": {
+			"id": 30003607,
+			"name": "Straloin",
+			"x": 290,
+			"y": 105
+		},
+		"30004233": {
+			"id": 30004233,
+			"name": "Shirshocin",
+			"x": 5,
+			"y": 410,
+			"external": true
+		}
+	}
+}

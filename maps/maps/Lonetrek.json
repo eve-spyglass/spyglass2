@@ -1,0 +1,720 @@
+{
+	"name": "Lonetrek",
+	"author": "Dotlan",
+	"description": "\"Our surveys show that there are many planets capable of sustaining life in these systems. However, the lack of a proper stargate network has drastically increased the travel time for our mission. I think it is worth it. I don't trust those Gallente further than I could throw one, and that isn't very far, given their indulgences.\n\nThe initial speculation for a fallback position seems to be sustainable, but we have one potential problem. The long-range probes we sent out have been reporting some strange readings. Our science teams think they are reading stargates and an adjoining region, which is disturbing. I do not think it possible that the Gallente have yet moved that far. Until we can confirm these readings and determine who or what these stargates belong to, it would be ill-advised to place ourselves in a position where we have our movement restricted on multiple fronts.\"\n\n\u003ci\u003e-Minato Zumari, Caldari Navy Commander \u003c/i\u003e",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30000138": {
+			"id": 30000138,
+			"name": "Ikuchi",
+			"x": 515,
+			"y": 475,
+			"external": true
+		},
+		"30000142": {
+			"id": 30000142,
+			"name": "Jita",
+			"x": 565,
+			"y": 400,
+			"external": true
+		},
+		"30000143": {
+			"id": 30000143,
+			"name": "Niyabainen",
+			"x": 490,
+			"y": 400,
+			"external": true
+		},
+		"30000145": {
+			"id": 30000145,
+			"name": "New Caldari",
+			"x": 525,
+			"y": 360,
+			"external": true
+		},
+		"30000205": {
+			"id": 30000205,
+			"name": "Obe",
+			"x": 935,
+			"y": 15,
+			"external": true
+		},
+		"30000848": {
+			"id": 30000848,
+			"name": "M-OEE8",
+			"x": 845,
+			"y": 15,
+			"external": true
+		},
+		"30001356": {
+			"id": 30001356,
+			"name": "Dantumi",
+			"x": 505,
+			"y": 120
+		},
+		"30001357": {
+			"id": 30001357,
+			"name": "Antiainen",
+			"x": 505,
+			"y": 40
+		},
+		"30001358": {
+			"id": 30001358,
+			"name": "Ossa",
+			"x": 505,
+			"y": 80
+		},
+		"30001359": {
+			"id": 30001359,
+			"name": "Semiki",
+			"x": 550,
+			"y": 0
+		},
+		"30001360": {
+			"id": 30001360,
+			"name": "Kiskoken",
+			"x": 460,
+			"y": 0
+		},
+		"30001361": {
+			"id": 30001361,
+			"name": "Aurohunen",
+			"x": 590,
+			"y": 120
+		},
+		"30001362": {
+			"id": 30001362,
+			"name": "Veisto",
+			"x": 362,
+			"y": 455
+		},
+		"30001363": {
+			"id": 30001363,
+			"name": "Sobaseki",
+			"x": 610,
+			"y": 455
+		},
+		"30001364": {
+			"id": 30001364,
+			"name": "Funtanainen",
+			"x": 820,
+			"y": 455
+		},
+		"30001365": {
+			"id": 30001365,
+			"name": "Isikemi",
+			"x": 820,
+			"y": 410
+		},
+		"30001366": {
+			"id": 30001366,
+			"name": "Uosusuokko",
+			"x": 820,
+			"y": 325
+		},
+		"30001367": {
+			"id": 30001367,
+			"name": "Hageken",
+			"x": 830,
+			"y": 250
+		},
+		"30001368": {
+			"id": 30001368,
+			"name": "Uemisaisen",
+			"x": 210,
+			"y": 385
+		},
+		"30001369": {
+			"id": 30001369,
+			"name": "Sotrentaira",
+			"x": 135,
+			"y": 365
+		},
+		"30001370": {
+			"id": 30001370,
+			"name": "Ouranienen",
+			"x": 130,
+			"y": 500
+		},
+		"30001371": {
+			"id": 30001371,
+			"name": "Erenta",
+			"x": 135,
+			"y": 400
+		},
+		"30001373": {
+			"id": 30001373,
+			"name": "Raussinen",
+			"x": 70,
+			"y": 365
+		},
+		"30001374": {
+			"id": 30001374,
+			"name": "Iidoken",
+			"x": 240,
+			"y": 560
+		},
+		"30001375": {
+			"id": 30001375,
+			"name": "Tsuguwa",
+			"x": 405,
+			"y": 695
+		},
+		"30001376": {
+			"id": 30001376,
+			"name": "Nourvukaiken",
+			"x": 401,
+			"y": 621
+		},
+		"30001377": {
+			"id": 30001377,
+			"name": "Sarekuwa",
+			"x": 359,
+			"y": 529
+		},
+		"30001378": {
+			"id": 30001378,
+			"name": "Ekura",
+			"x": 690,
+			"y": 695
+		},
+		"30001379": {
+			"id": 30001379,
+			"name": "Tunttaras",
+			"x": 450,
+			"y": 505
+		},
+		"30001380": {
+			"id": 30001380,
+			"name": "Vellaine",
+			"x": 740,
+			"y": 215
+		},
+		"30001382": {
+			"id": 30001382,
+			"name": "Akonoinen",
+			"x": 775,
+			"y": 175
+		},
+		"30001383": {
+			"id": 30001383,
+			"name": "Vaajaita",
+			"x": 695,
+			"y": 120
+		},
+		"30001384": {
+			"id": 30001384,
+			"name": "Autaris",
+			"x": 695,
+			"y": 175
+		},
+		"30001385": {
+			"id": 30001385,
+			"name": "Jan",
+			"x": 775,
+			"y": 120
+		},
+		"30001386": {
+			"id": 30001386,
+			"name": "Saatuban",
+			"x": 370,
+			"y": 350
+		},
+		"30001387": {
+			"id": 30001387,
+			"name": "Isikano",
+			"x": 280,
+			"y": 405
+		},
+		"30001388": {
+			"id": 30001388,
+			"name": "Mara",
+			"x": 460,
+			"y": 220
+		},
+		"30001389": {
+			"id": 30001389,
+			"name": "Isanamo",
+			"x": 355,
+			"y": 385
+		},
+		"30001390": {
+			"id": 30001390,
+			"name": "Pakkonen",
+			"x": 255,
+			"y": 440
+		},
+		"30001391": {
+			"id": 30001391,
+			"name": "Piekura",
+			"x": 450,
+			"y": 325
+		},
+		"30001392": {
+			"id": 30001392,
+			"name": "Amsen",
+			"x": 645,
+			"y": 305
+		},
+		"30001393": {
+			"id": 30001393,
+			"name": "Malkalen",
+			"x": 585,
+			"y": 280
+		},
+		"30001394": {
+			"id": 30001394,
+			"name": "Korama",
+			"x": 520,
+			"y": 205
+		},
+		"30001395": {
+			"id": 30001395,
+			"name": "Ylandoki",
+			"x": 585,
+			"y": 230
+		},
+		"30001396": {
+			"id": 30001396,
+			"name": "Aakari",
+			"x": 585,
+			"y": 180
+		},
+		"30001397": {
+			"id": 30001397,
+			"name": "Isseras",
+			"x": 645,
+			"y": 205
+		},
+		"30001398": {
+			"id": 30001398,
+			"name": "Aunenen",
+			"x": 315,
+			"y": 205
+		},
+		"30001399": {
+			"id": 30001399,
+			"name": "Elonaya",
+			"x": 260,
+			"y": 295
+		},
+		"30001400": {
+			"id": 30001400,
+			"name": "Litiura",
+			"x": 315,
+			"y": 320
+		},
+		"30001401": {
+			"id": 30001401,
+			"name": "Nonni",
+			"x": 315,
+			"y": 260
+		},
+		"30001402": {
+			"id": 30001402,
+			"name": "Passari",
+			"x": 395,
+			"y": 280
+		},
+		"30001403": {
+			"id": 30001403,
+			"name": "Piak",
+			"x": 200,
+			"y": 320
+		},
+		"30001404": {
+			"id": 30001404,
+			"name": "Airkio",
+			"x": 635,
+			"y": 600
+		},
+		"30001405": {
+			"id": 30001405,
+			"name": "Kakakela",
+			"x": 635,
+			"y": 540
+		},
+		"30001406": {
+			"id": 30001406,
+			"name": "Kamokor",
+			"x": 565,
+			"y": 545
+		},
+		"30001407": {
+			"id": 30001407,
+			"name": "Todaki",
+			"x": 580,
+			"y": 500
+		},
+		"30001408": {
+			"id": 30001408,
+			"name": "Ruvas",
+			"x": 565,
+			"y": 595
+		},
+		"30001409": {
+			"id": 30001409,
+			"name": "Umokka",
+			"x": 520,
+			"y": 620
+		},
+		"30001410": {
+			"id": 30001410,
+			"name": "Kirras",
+			"x": 175,
+			"y": 580
+		},
+		"30001411": {
+			"id": 30001411,
+			"name": "Autama",
+			"x": 130,
+			"y": 545
+		},
+		"30001412": {
+			"id": 30001412,
+			"name": "Tsukuras",
+			"x": 65,
+			"y": 520
+		},
+		"30001414": {
+			"id": 30001414,
+			"name": "Ajanen",
+			"x": 35,
+			"y": 475
+		},
+		"30001415": {
+			"id": 30001415,
+			"name": "Kuoka",
+			"x": 55,
+			"y": 440
+		},
+		"30001416": {
+			"id": 30001416,
+			"name": "Liukikka",
+			"x": 370,
+			"y": 180
+		},
+		"30001417": {
+			"id": 30001417,
+			"name": "Rauntaka",
+			"x": 420,
+			"y": 140
+		},
+		"30001418": {
+			"id": 30001418,
+			"name": "Aikantoh",
+			"x": 390,
+			"y": 215
+		},
+		"30001419": {
+			"id": 30001419,
+			"name": "Atai",
+			"x": 420,
+			"y": 80
+		},
+		"30001420": {
+			"id": 30001420,
+			"name": "Daras",
+			"x": 315,
+			"y": 80
+		},
+		"30001421": {
+			"id": 30001421,
+			"name": "Otalieto",
+			"x": 315,
+			"y": 140
+		},
+		"30001422": {
+			"id": 30001422,
+			"name": "Iitanmadan",
+			"x": 295,
+			"y": 40
+		},
+		"30001423": {
+			"id": 30001423,
+			"name": "Jotenen",
+			"x": 370,
+			"y": 110
+		},
+		"30001424": {
+			"id": 30001424,
+			"name": "Haajinen",
+			"x": 135,
+			"y": 330
+		},
+		"30001425": {
+			"id": 30001425,
+			"name": "Oipo",
+			"x": 65,
+			"y": 325
+		},
+		"30001426": {
+			"id": 30001426,
+			"name": "Isinokka",
+			"x": 30,
+			"y": 295
+		},
+		"30001427": {
+			"id": 30001427,
+			"name": "Yoma",
+			"x": 10,
+			"y": 260
+		},
+		"30001428": {
+			"id": 30001428,
+			"name": "Ibura",
+			"x": 5,
+			"y": 225
+		},
+		"30001429": {
+			"id": 30001429,
+			"name": "Torrinos",
+			"x": 5,
+			"y": 190
+		},
+		"30001430": {
+			"id": 30001430,
+			"name": "Endatoh",
+			"x": 275,
+			"y": 110
+		},
+		"30001431": {
+			"id": 30001431,
+			"name": "Aivoli",
+			"x": 220,
+			"y": 90
+		},
+		"30001432": {
+			"id": 30001432,
+			"name": "Uesuro",
+			"x": 155,
+			"y": 105
+		},
+		"30001433": {
+			"id": 30001433,
+			"name": "Oishami",
+			"x": 155,
+			"y": 70
+		},
+		"30001434": {
+			"id": 30001434,
+			"name": "Elanoda",
+			"x": 145,
+			"y": 140
+		},
+		"30001435": {
+			"id": 30001435,
+			"name": "Ohbochi",
+			"x": 145,
+			"y": 175
+		},
+		"30001436": {
+			"id": 30001436,
+			"name": "Isie",
+			"x": 210,
+			"y": 175
+		},
+		"30001437": {
+			"id": 30001437,
+			"name": "Tamo",
+			"x": 230,
+			"y": 20
+		},
+		"30001438": {
+			"id": 30001438,
+			"name": "Nannaras",
+			"x": 155,
+			"y": 20
+		},
+		"30001439": {
+			"id": 30001439,
+			"name": "Anin",
+			"x": 85,
+			"y": 5
+		},
+		"30001440": {
+			"id": 30001440,
+			"name": "Karjataimon",
+			"x": 85,
+			"y": 40
+		},
+		"30001441": {
+			"id": 30001441,
+			"name": "Tartoken",
+			"x": 5,
+			"y": 5
+		},
+		"30001442": {
+			"id": 30001442,
+			"name": "Saranen",
+			"x": 5,
+			"y": 40
+		},
+		"30001443": {
+			"id": 30001443,
+			"name": "Vuorrassi",
+			"x": 845,
+			"y": 175
+		},
+		"30001444": {
+			"id": 30001444,
+			"name": "Oimmo",
+			"x": 935,
+			"y": 175
+		},
+		"30001446": {
+			"id": 30001446,
+			"name": "Otsasai",
+			"x": 935,
+			"y": 120
+		},
+		"30001447": {
+			"id": 30001447,
+			"name": "Taisy",
+			"x": 845,
+			"y": 65
+		},
+		"30001448": {
+			"id": 30001448,
+			"name": "Hakonen",
+			"x": 935,
+			"y": 65
+		},
+		"30001984": {
+			"id": 30001984,
+			"name": "EC-P8R",
+			"x": 5,
+			"y": 155,
+			"external": true
+		},
+		"30001985": {
+			"id": 30001985,
+			"name": "EWOK-K",
+			"x": 70,
+			"y": 140,
+			"external": true
+		},
+		"30001987": {
+			"id": 30001987,
+			"name": "G-M4I8",
+			"x": 5,
+			"y": 120,
+			"external": true
+		},
+		"30001990": {
+			"id": 30001990,
+			"name": "93PI-4",
+			"x": 5,
+			"y": 85,
+			"external": true
+		},
+		"30002752": {
+			"id": 30002752,
+			"name": "Ahynada",
+			"x": 412,
+			"y": 480,
+			"external": true
+		},
+		"30002753": {
+			"id": 30002753,
+			"name": "Aikoro",
+			"x": 740,
+			"y": 430,
+			"external": true
+		},
+		"30002754": {
+			"id": 30002754,
+			"name": "Alikara",
+			"x": 740,
+			"y": 385,
+			"external": true
+		},
+		"30002758": {
+			"id": 30002758,
+			"name": "Hasama",
+			"x": 440,
+			"y": 180,
+			"external": true
+		},
+		"30002781": {
+			"id": 30002781,
+			"name": "Halaima",
+			"x": 320,
+			"y": 561,
+			"external": true
+		},
+		"30002813": {
+			"id": 30002813,
+			"name": "Tama",
+			"x": 460,
+			"y": 600,
+			"external": true
+		},
+		"30011392": {
+			"id": 30011392,
+			"name": "Jouvulen",
+			"x": 760,
+			"y": 695
+		},
+		"30011407": {
+			"id": 30011407,
+			"name": "Akiainavas",
+			"x": 615,
+			"y": 650
+		},
+		"30021392": {
+			"id": 30021392,
+			"name": "Kappas",
+			"x": 880,
+			"y": 480
+		},
+		"30031407": {
+			"id": 30031407,
+			"name": "Hitanishio",
+			"x": 391,
+			"y": 560
+		},
+		"30041407": {
+			"id": 30041407,
+			"name": "Ichinumi",
+			"x": 480,
+			"y": 545
+		},
+		"30045310": {
+			"id": 30045310,
+			"name": "Sarenemi",
+			"x": 85,
+			"y": 75,
+			"external": true
+		},
+		"30045314": {
+			"id": 30045314,
+			"name": "Kinakka",
+			"x": 150,
+			"y": 250,
+			"external": true
+		},
+		"30045315": {
+			"id": 30045315,
+			"name": "Raihbaka",
+			"x": 145,
+			"y": 210,
+			"external": true
+		},
+		"30045317": {
+			"id": 30045317,
+			"name": "Iralaja",
+			"x": 210,
+			"y": 210,
+			"external": true
+		},
+		"30045324": {
+			"id": 30045324,
+			"name": "Onnamon",
+			"x": 170,
+			"y": 285,
+			"external": true
+		}
+	}
+}

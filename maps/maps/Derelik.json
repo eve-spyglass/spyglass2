@@ -1,0 +1,767 @@
+{
+	"name": "Derelik",
+	"author": "Dotlan",
+	"description": "The Derelik region, sovereign seat of the Ammatar Mandate, became the shield to the Amarrian flank in the wake of the Minmatar Rebellion. Derelik witnessed many hostile exchanges between the Amarr and rebel forces as the latter tried to push deeper into the territory of their former masters. Having held their ground, thanks in no small part to the Ammatars' military efforts, the Amarr awarded the Ammatar with their own province. However, this portion of space shared borders with the newly forming Minmatar Republic as well as the Empire, and thus came to be situated in a dark recess surrounded by hostiles. \n\nGiven the lack of safe routes elsewhere, the local economies of this region were dependent on trade with the Amarr as their primary means of survival. The Ammatar persevered over many decades of economic stagnation and limited trade partners, and their determination has in recent decades been rewarded with an increase in economic prosperity. This harsh trail is a point of pride for all who call themselves Ammatar, and it has bolstered their faith in the Amarrian way to no end.",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30000001": {
+			"id": 30000001,
+			"name": "Tanoo",
+			"x": 120,
+			"y": 110
+		},
+		"30000002": {
+			"id": 30000002,
+			"name": "Lashesih",
+			"x": 100,
+			"y": 60
+		},
+		"30000003": {
+			"id": 30000003,
+			"name": "Akpivem",
+			"x": 135,
+			"y": 245
+		},
+		"30000004": {
+			"id": 30000004,
+			"name": "Jark",
+			"x": 215,
+			"y": 15
+		},
+		"30000005": {
+			"id": 30000005,
+			"name": "Sasta",
+			"x": 185,
+			"y": 60
+		},
+		"30000006": {
+			"id": 30000006,
+			"name": "Zaid",
+			"x": 405,
+			"y": 170
+		},
+		"30000007": {
+			"id": 30000007,
+			"name": "Yuzier",
+			"x": 195,
+			"y": 165
+		},
+		"30000008": {
+			"id": 30000008,
+			"name": "Nirbhi",
+			"x": 315,
+			"y": 170
+		},
+		"30000009": {
+			"id": 30000009,
+			"name": "Sooma",
+			"x": 290,
+			"y": 735
+		},
+		"30000010": {
+			"id": 30000010,
+			"name": "Chidah",
+			"x": 385,
+			"y": 735
+		},
+		"30000011": {
+			"id": 30000011,
+			"name": "Shenela",
+			"x": 800,
+			"y": 735
+		},
+		"30000012": {
+			"id": 30000012,
+			"name": "Asabona",
+			"x": 160,
+			"y": 655
+		},
+		"30000013": {
+			"id": 30000013,
+			"name": "Onsooh",
+			"x": 320,
+			"y": 670
+		},
+		"30000014": {
+			"id": 30000014,
+			"name": "Shamahi",
+			"x": 505,
+			"y": 670
+		},
+		"30000015": {
+			"id": 30000015,
+			"name": "Sendaya",
+			"x": 430,
+			"y": 585
+		},
+		"30000016": {
+			"id": 30000016,
+			"name": "Nazhgete",
+			"x": 300,
+			"y": 630
+		},
+		"30000017": {
+			"id": 30000017,
+			"name": "Futzchag",
+			"x": 420,
+			"y": 480
+		},
+		"30000018": {
+			"id": 30000018,
+			"name": "Kazna",
+			"x": 425,
+			"y": 525
+		},
+		"30000019": {
+			"id": 30000019,
+			"name": "Podion",
+			"x": 405,
+			"y": 380
+		},
+		"30000020": {
+			"id": 30000020,
+			"name": "Lilmad",
+			"x": 475,
+			"y": 455
+		},
+		"30000022": {
+			"id": 30000022,
+			"name": "Jayneleb",
+			"x": 420,
+			"y": 430
+		},
+		"30000023": {
+			"id": 30000023,
+			"name": "Fovihi",
+			"x": 505,
+			"y": 170
+		},
+		"30000024": {
+			"id": 30000024,
+			"name": "Kiereend",
+			"x": 505,
+			"y": 255
+		},
+		"30000025": {
+			"id": 30000025,
+			"name": "Rashy",
+			"x": 560,
+			"y": 205
+		},
+		"30000026": {
+			"id": 30000026,
+			"name": "Ordize",
+			"x": 645,
+			"y": 230
+		},
+		"30000027": {
+			"id": 30000027,
+			"name": "Psasa",
+			"x": 570,
+			"y": 240
+		},
+		"30000028": {
+			"id": 30000028,
+			"name": "Eshtah",
+			"x": 640,
+			"y": 270
+		},
+		"30000029": {
+			"id": 30000029,
+			"name": "Lachailes",
+			"x": 620,
+			"y": 195
+		},
+		"30000030": {
+			"id": 30000030,
+			"name": "Kasrasi",
+			"x": 670,
+			"y": 170
+		},
+		"30000031": {
+			"id": 30000031,
+			"name": "Mohas",
+			"x": 475,
+			"y": 50
+		},
+		"30000032": {
+			"id": 30000032,
+			"name": "Hasiari",
+			"x": 285,
+			"y": 50
+		},
+		"30000033": {
+			"id": 30000033,
+			"name": "Radima",
+			"x": 385,
+			"y": 50
+		},
+		"30000034": {
+			"id": 30000034,
+			"name": "Alkez",
+			"x": 285,
+			"y": 85
+		},
+		"30000035": {
+			"id": 30000035,
+			"name": "Nimambal",
+			"x": 575,
+			"y": 50
+		},
+		"30000036": {
+			"id": 30000036,
+			"name": "Yishinoon",
+			"x": 530,
+			"y": 15
+		},
+		"30000037": {
+			"id": 30000037,
+			"name": "Uplingur",
+			"x": 445,
+			"y": 5
+		},
+		"30000038": {
+			"id": 30000038,
+			"name": "Dooz",
+			"x": 800,
+			"y": 530
+		},
+		"30000039": {
+			"id": 30000039,
+			"name": "Bayuka",
+			"x": 855,
+			"y": 480
+		},
+		"30000040": {
+			"id": 30000040,
+			"name": "Uzistoon",
+			"x": 785,
+			"y": 465
+		},
+		"30000041": {
+			"id": 30000041,
+			"name": "Bairshir",
+			"x": 915,
+			"y": 465
+		},
+		"30000042": {
+			"id": 30000042,
+			"name": "Moh",
+			"x": 960,
+			"y": 425
+		},
+		"30000043": {
+			"id": 30000043,
+			"name": "Sari",
+			"x": 745,
+			"y": 505
+		},
+		"30000044": {
+			"id": 30000044,
+			"name": "Faspera",
+			"x": 285,
+			"y": 580
+		},
+		"30000045": {
+			"id": 30000045,
+			"name": "Jaymass",
+			"x": 225,
+			"y": 555
+		},
+		"30000046": {
+			"id": 30000046,
+			"name": "Mifrata",
+			"x": 310,
+			"y": 530
+		},
+		"30000047": {
+			"id": 30000047,
+			"name": "Majamar",
+			"x": 335,
+			"y": 490
+		},
+		"30000048": {
+			"id": 30000048,
+			"name": "Ihal",
+			"x": 245,
+			"y": 510
+		},
+		"30000049": {
+			"id": 30000049,
+			"name": "Camal",
+			"x": 205,
+			"y": 595
+		},
+		"30000050": {
+			"id": 30000050,
+			"name": "Fera",
+			"x": 350,
+			"y": 455
+		},
+		"30000051": {
+			"id": 30000051,
+			"name": "Juddi",
+			"x": 300,
+			"y": 300
+		},
+		"30000052": {
+			"id": 30000052,
+			"name": "Maspah",
+			"x": 255,
+			"y": 265
+		},
+		"30000053": {
+			"id": 30000053,
+			"name": "Ibaria",
+			"x": 225,
+			"y": 300
+		},
+		"30000054": {
+			"id": 30000054,
+			"name": "Shala",
+			"x": 230,
+			"y": 230
+		},
+		"30000055": {
+			"id": 30000055,
+			"name": "Zemalu",
+			"x": 295,
+			"y": 230
+		},
+		"30000056": {
+			"id": 30000056,
+			"name": "Khankenirdia",
+			"x": 360,
+			"y": 275
+		},
+		"30000057": {
+			"id": 30000057,
+			"name": "Nikh",
+			"x": 485,
+			"y": 315
+		},
+		"30000058": {
+			"id": 30000058,
+			"name": "Amphar",
+			"x": 610,
+			"y": 335
+		},
+		"30000059": {
+			"id": 30000059,
+			"name": "Salashayama",
+			"x": 770,
+			"y": 345
+		},
+		"30000060": {
+			"id": 30000060,
+			"name": "Janus",
+			"x": 880,
+			"y": 310
+		},
+		"30000061": {
+			"id": 30000061,
+			"name": "Agha",
+			"x": 470,
+			"y": 345
+		},
+		"30000062": {
+			"id": 30000062,
+			"name": "Iosantin",
+			"x": 950,
+			"y": 290
+		},
+		"30000063": {
+			"id": 30000063,
+			"name": "Orva",
+			"x": 810,
+			"y": 300
+		},
+		"30000064": {
+			"id": 30000064,
+			"name": "Zet",
+			"x": 740,
+			"y": 290
+		},
+		"30000065": {
+			"id": 30000065,
+			"name": "Akhrad",
+			"x": 895,
+			"y": 220
+		},
+		"30000066": {
+			"id": 30000066,
+			"name": "Pirohdim",
+			"x": 755,
+			"y": 245
+		},
+		"30000067": {
+			"id": 30000067,
+			"name": "Sharir",
+			"x": 955,
+			"y": 250
+		},
+		"30000068": {
+			"id": 30000068,
+			"name": "Usroh",
+			"x": 555,
+			"y": 300
+		},
+		"30000069": {
+			"id": 30000069,
+			"name": "Thiarer",
+			"x": 820,
+			"y": 255
+		},
+		"30000070": {
+			"id": 30000070,
+			"name": "Gomati",
+			"x": 75,
+			"y": 555
+		},
+		"30000071": {
+			"id": 30000071,
+			"name": "Jangar",
+			"x": 0,
+			"y": 500
+		},
+		"30000072": {
+			"id": 30000072,
+			"name": "Nakah",
+			"x": 0,
+			"y": 605
+		},
+		"30000073": {
+			"id": 30000073,
+			"name": "Irshah",
+			"x": 135,
+			"y": 535
+		},
+		"30000074": {
+			"id": 30000074,
+			"name": "Hasateem",
+			"x": 0,
+			"y": 555
+		},
+		"30000075": {
+			"id": 30000075,
+			"name": "Assah",
+			"x": 75,
+			"y": 605
+		},
+		"30000076": {
+			"id": 30000076,
+			"name": "Tidacha",
+			"x": 315,
+			"y": 125
+		},
+		"30000077": {
+			"id": 30000077,
+			"name": "Odlib",
+			"x": 385,
+			"y": 125
+		},
+		"30000078": {
+			"id": 30000078,
+			"name": "Jofan",
+			"x": 415,
+			"y": 95
+		},
+		"30000079": {
+			"id": 30000079,
+			"name": "Milu",
+			"x": 250,
+			"y": 125
+		},
+		"30000080": {
+			"id": 30000080,
+			"name": "Yadi",
+			"x": 450,
+			"y": 125
+		},
+		"30000081": {
+			"id": 30000081,
+			"name": "Buftiar",
+			"x": 515,
+			"y": 125
+		},
+		"30000082": {
+			"id": 30000082,
+			"name": "Jarizza",
+			"x": 20,
+			"y": 330
+		},
+		"30000083": {
+			"id": 30000083,
+			"name": "Ejahi",
+			"x": 10,
+			"y": 275
+		},
+		"30000084": {
+			"id": 30000084,
+			"name": "Asghatil",
+			"x": 105,
+			"y": 290
+		},
+		"30000085": {
+			"id": 30000085,
+			"name": "Bar",
+			"x": 90,
+			"y": 375
+		},
+		"30000086": {
+			"id": 30000086,
+			"name": "Sucha",
+			"x": 105,
+			"y": 340
+		},
+		"30000087": {
+			"id": 30000087,
+			"name": "Gelhan",
+			"x": 25,
+			"y": 225
+		},
+		"30000088": {
+			"id": 30000088,
+			"name": "Akeva",
+			"x": 45,
+			"y": 185
+		},
+		"30000089": {
+			"id": 30000089,
+			"name": "Sosa",
+			"x": 640,
+			"y": 670
+		},
+		"30000090": {
+			"id": 30000090,
+			"name": "Ilahed",
+			"x": 575,
+			"y": 670
+		},
+		"30000091": {
+			"id": 30000091,
+			"name": "Eshwil",
+			"x": 640,
+			"y": 705
+		},
+		"30000092": {
+			"id": 30000092,
+			"name": "Aranir",
+			"x": 705,
+			"y": 670
+		},
+		"30000093": {
+			"id": 30000093,
+			"name": "Ishkad",
+			"x": 575,
+			"y": 705
+		},
+		"30000094": {
+			"id": 30000094,
+			"name": "Hahyil",
+			"x": 770,
+			"y": 670
+		},
+		"30000095": {
+			"id": 30000095,
+			"name": "Asilem",
+			"x": 645,
+			"y": 490
+		},
+		"30000096": {
+			"id": 30000096,
+			"name": "Mahnagh",
+			"x": 615,
+			"y": 585
+		},
+		"30000097": {
+			"id": 30000097,
+			"name": "Shach",
+			"x": 625,
+			"y": 530
+		},
+		"30000098": {
+			"id": 30000098,
+			"name": "Kehrara",
+			"x": 555,
+			"y": 510
+		},
+		"30000099": {
+			"id": 30000099,
+			"name": "Arena",
+			"x": 565,
+			"y": 460
+		},
+		"30000100": {
+			"id": 30000100,
+			"name": "Timeor",
+			"x": 690,
+			"y": 530
+		},
+		"30000101": {
+			"id": 30000101,
+			"name": "Uhtafal",
+			"x": 590,
+			"y": 410
+		},
+		"30000102": {
+			"id": 30000102,
+			"name": "Dysa",
+			"x": 635,
+			"y": 450
+		},
+		"30000103": {
+			"id": 30000103,
+			"name": "Serad",
+			"x": 520,
+			"y": 420
+		},
+		"30000104": {
+			"id": 30000104,
+			"name": "Mahti",
+			"x": 690,
+			"y": 415
+		},
+		"30000105": {
+			"id": 30000105,
+			"name": "Abha",
+			"x": 600,
+			"y": 375
+		},
+		"30000106": {
+			"id": 30000106,
+			"name": "Shedoo",
+			"x": 245,
+			"y": 465
+		},
+		"30000107": {
+			"id": 30000107,
+			"name": "Gamis",
+			"x": 160,
+			"y": 415
+		},
+		"30000108": {
+			"id": 30000108,
+			"name": "Nieril",
+			"x": 190,
+			"y": 365
+		},
+		"30000109": {
+			"id": 30000109,
+			"name": "Berta",
+			"x": 305,
+			"y": 410
+		},
+		"30000110": {
+			"id": 30000110,
+			"name": "Bekirdod",
+			"x": 235,
+			"y": 425
+		},
+		"30000111": {
+			"id": 30000111,
+			"name": "Hothomouh",
+			"x": 250,
+			"y": 365
+		},
+		"30000112": {
+			"id": 30000112,
+			"name": "Arnola",
+			"x": 730,
+			"y": 130
+		},
+		"30000113": {
+			"id": 30000113,
+			"name": "Astabih",
+			"x": 750,
+			"y": 95
+		},
+		"30000114": {
+			"id": 30000114,
+			"name": "Ubtes",
+			"x": 745,
+			"y": 50
+		},
+		"30000115": {
+			"id": 30000115,
+			"name": "Bimener",
+			"x": 840,
+			"y": 70
+		},
+		"30000116": {
+			"id": 30000116,
+			"name": "Kenobanala",
+			"x": 820,
+			"y": 30
+		},
+		"30000117": {
+			"id": 30000117,
+			"name": "Khabi",
+			"x": 825,
+			"y": 110
+		},
+		"30000118": {
+			"id": 30000118,
+			"name": "Uanzin",
+			"x": 825,
+			"y": 145
+		},
+		"30000943": {
+			"id": 30000943,
+			"name": "7Q-8Z2",
+			"x": 895,
+			"y": 110,
+			"external": true
+		},
+		"30001047": {
+			"id": 30001047,
+			"name": "Doril",
+			"x": 440,
+			"y": 620,
+			"external": true
+		},
+		"30002395": {
+			"id": 30002395,
+			"name": "Audesder",
+			"x": 895,
+			"y": 10,
+			"external": true
+		},
+		"30002508": {
+			"id": 30002508,
+			"name": "Trytedald",
+			"x": 365,
+			"y": 0,
+			"external": true
+		},
+		"30002509": {
+			"id": 30002509,
+			"name": "Odatrik",
+			"x": 285,
+			"y": 5,
+			"external": true
+		},
+		"30002973": {
+			"id": 30002973,
+			"name": "Lisudeh",
+			"x": 10,
+			"y": 35,
+			"external": true
+		},
+		"30002982": {
+			"id": 30002982,
+			"name": "Rahadalon",
+			"x": 0,
+			"y": 655,
+			"external": true
+		},
+		"30003703": {
+			"id": 30003703,
+			"name": "G-5EN2",
+			"x": 75,
+			"y": 655,
+			"external": true
+		}
+	}
+}

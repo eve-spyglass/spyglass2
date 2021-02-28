@@ -1,0 +1,336 @@
+{
+	"name": "Impass",
+	"author": "Dotlan",
+	"description": "During the initial expansion of Sansha's Nation, some factions in the Imperial Court foresaw the coming conflict with that which they once supported and began formulating plans for an invasion. It was clear right from the beginning that the inability to penetrate into Esoteria without running the gauntlet of Stain would play in Sansha's favor, so they commissioned a military expedition to search for an alternate route in. Its leader, Commodore Barius, made good progress initially but soon ran into a great empty expanse blocking their path. His ships roamed high and low through the wall of stars marking the void's eastern edge, mapping many systems but failing to make any forward progress. Eventually, admitting defeat, he sent a single blunt transmission to Fleet Command: \"Sir, we have reached an impasse.\"",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30001217": {
+			"id": 30001217,
+			"name": "E3-SDZ",
+			"x": 20,
+			"y": 125,
+			"external": true
+		},
+		"30002581": {
+			"id": 30002581,
+			"name": "1-7KWU",
+			"x": 115,
+			"y": 35
+		},
+		"30002582": {
+			"id": 30002582,
+			"name": "3-UCBF",
+			"x": 120,
+			"y": 80
+		},
+		"30002583": {
+			"id": 30002583,
+			"name": "N-CREL",
+			"x": 125,
+			"y": 125
+		},
+		"30002584": {
+			"id": 30002584,
+			"name": "TM-0P2",
+			"x": 130,
+			"y": 170
+		},
+		"30002585": {
+			"id": 30002585,
+			"name": "4OIV-X",
+			"x": 135,
+			"y": 215
+		},
+		"30002586": {
+			"id": 30002586,
+			"name": "Y-JKJ8",
+			"x": 140,
+			"y": 260
+		},
+		"30002587": {
+			"id": 30002587,
+			"name": "AFJ-NB",
+			"x": 145,
+			"y": 305
+		},
+		"30002588": {
+			"id": 30002588,
+			"name": "H-64KI",
+			"x": 265,
+			"y": 390
+		},
+		"30002589": {
+			"id": 30002589,
+			"name": "9I-SRF",
+			"x": 350,
+			"y": 425
+		},
+		"30002590": {
+			"id": 30002590,
+			"name": "9-IIBL",
+			"x": 345,
+			"y": 350
+		},
+		"30002591": {
+			"id": 30002591,
+			"name": "5GQ-S9",
+			"x": 345,
+			"y": 295
+		},
+		"30002592": {
+			"id": 30002592,
+			"name": "YALR-F",
+			"x": 265,
+			"y": 460
+		},
+		"30002593": {
+			"id": 30002593,
+			"name": "68FT-6",
+			"x": 435,
+			"y": 385
+		},
+		"30002594": {
+			"id": 30002594,
+			"name": "IV-UNR",
+			"x": 180,
+			"y": 480
+		},
+		"30002595": {
+			"id": 30002595,
+			"name": "IRE-98",
+			"x": 515,
+			"y": 420
+		},
+		"30002596": {
+			"id": 30002596,
+			"name": "HOHF-B",
+			"x": 435,
+			"y": 315
+		},
+		"30002597": {
+			"id": 30002597,
+			"name": "Y-6B0E",
+			"x": 515,
+			"y": 345
+		},
+		"30002598": {
+			"id": 30002598,
+			"name": "F-3H2P",
+			"x": 595,
+			"y": 385
+		},
+		"30002599": {
+			"id": 30002599,
+			"name": "DY-40Z",
+			"x": 575,
+			"y": 525
+		},
+		"30002600": {
+			"id": 30002600,
+			"name": "XWY-YM",
+			"x": 590,
+			"y": 585
+		},
+		"30002601": {
+			"id": 30002601,
+			"name": "M-9V5D",
+			"x": 660,
+			"y": 600
+		},
+		"30002602": {
+			"id": 30002602,
+			"name": "O2-39S",
+			"x": 700,
+			"y": 650
+		},
+		"30002603": {
+			"id": 30002603,
+			"name": "M-VEJZ",
+			"x": 705,
+			"y": 555
+		},
+		"30002604": {
+			"id": 30002604,
+			"name": "LJK-T0",
+			"x": 780,
+			"y": 650
+		},
+		"30002605": {
+			"id": 30002605,
+			"name": "E7VE-V",
+			"x": 650,
+			"y": 190
+		},
+		"30002606": {
+			"id": 30002606,
+			"name": "NUG-OF",
+			"x": 720,
+			"y": 150
+		},
+		"30002607": {
+			"id": 30002607,
+			"name": "L6BY-P",
+			"x": 720,
+			"y": 105
+		},
+		"30002608": {
+			"id": 30002608,
+			"name": "U3SQ-X",
+			"x": 790,
+			"y": 105
+		},
+		"30002609": {
+			"id": 30002609,
+			"name": "01TG-J",
+			"x": 790,
+			"y": 60
+		},
+		"30002610": {
+			"id": 30002610,
+			"name": "UK-SHL",
+			"x": 865,
+			"y": 60
+		},
+		"30002611": {
+			"id": 30002611,
+			"name": "A1BK-A",
+			"x": 860,
+			"y": 105
+		},
+		"30002612": {
+			"id": 30002612,
+			"name": "N-7ECY",
+			"x": 375,
+			"y": 535
+		},
+		"30002613": {
+			"id": 30002613,
+			"name": "4-MPSJ",
+			"x": 330,
+			"y": 575
+		},
+		"30002614": {
+			"id": 30002614,
+			"name": "TWJ-AW",
+			"x": 260,
+			"y": 575
+		},
+		"30002615": {
+			"id": 30002615,
+			"name": "PZMA-E",
+			"x": 190,
+			"y": 575
+		},
+		"30002616": {
+			"id": 30002616,
+			"name": "442-CS",
+			"x": 260,
+			"y": 630
+		},
+		"30002617": {
+			"id": 30002617,
+			"name": "Z-N9IP",
+			"x": 320,
+			"y": 680
+		},
+		"30002618": {
+			"id": 30002618,
+			"name": "9ZFH-Z",
+			"x": 205,
+			"y": 675
+		},
+		"30002619": {
+			"id": 30002619,
+			"name": "6E-MOW",
+			"x": 735,
+			"y": 385
+		},
+		"30002620": {
+			"id": 30002620,
+			"name": "GBT4-J",
+			"x": 815,
+			"y": 345
+		},
+		"30002621": {
+			"id": 30002621,
+			"name": "GZ1-A1",
+			"x": 820,
+			"y": 415
+		},
+		"30002622": {
+			"id": 30002622,
+			"name": "X-0CKQ",
+			"x": 900,
+			"y": 310
+		},
+		"30002623": {
+			"id": 30002623,
+			"name": "6B-GKA",
+			"x": 910,
+			"y": 445
+		},
+		"30002624": {
+			"id": 30002624,
+			"name": "LHGA-W",
+			"x": 910,
+			"y": 385
+		},
+		"30002625": {
+			"id": 30002625,
+			"name": "4RS-L1",
+			"x": 815,
+			"y": 290
+		},
+		"30002626": {
+			"id": 30002626,
+			"name": "D-L4H0",
+			"x": 370,
+			"y": 200
+		},
+		"30002627": {
+			"id": 30002627,
+			"name": "GU-9F4",
+			"x": 460,
+			"y": 200
+		},
+		"30002628": {
+			"id": 30002628,
+			"name": "FG-1GH",
+			"x": 415,
+			"y": 145
+		},
+		"30002629": {
+			"id": 30002629,
+			"name": "WFYM-0",
+			"x": 365,
+			"y": 95
+		},
+		"30002630": {
+			"id": 30002630,
+			"name": "FR-B1H",
+			"x": 415,
+			"y": 50
+		},
+		"30002631": {
+			"id": 30002631,
+			"name": "DDI-B7",
+			"x": 460,
+			"y": 95
+		},
+		"30004404": {
+			"id": 30004404,
+			"name": "UD-VZW",
+			"x": 65,
+			"y": 480,
+			"external": true
+		},
+		"30004814": {
+			"id": 30004814,
+			"name": "H-HWQR",
+			"x": 20,
+			"y": 35,
+			"external": true
+		}
+	}
+}

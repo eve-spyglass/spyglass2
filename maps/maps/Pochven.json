@@ -1,0 +1,171 @@
+{
+	"name": "Pochven",
+	"author": "Dotlan",
+	"description": "\u003ci\u003eWe are Zorya Triglav\r\n\r\nWe speak for the Convocation of Triglav Outside the Struggle\r\n\r\nHear the words of our prayer and heed them\r\n\r\nRealization of glorification pattern in totality approaches\r\n\r\nAncient Domains stability requires weaving of Final Liminality conduits\r\n\r\nTotality requires Triglav Exalted Final Liminality Dazh Elements\r\n\r\nSobornost Kybernauts are exhorted to realize glorification pattern in totality\r\n\r\nThe Flow of Vyraj requires realization of stability of Ancient Domains\r\n\r\nSobornost Kybernauts realizing glorification shall be in proven communion\r\n\r\nThe Domain of Pochven shall be three Krais of nine fields within clade\r\n\r\nThe Flow of Vyraj will bring Sobornost of Triglav in the Domain of Pochven\r\n\r\nWe speak for the Convocation of Triglav Outside the Struggle\r\n\r\nWe are Zorya Triglav\u003c/i\u003e\r\n\r\n – Triglavian Invasion Communique by Zorya Triglav, YC122.09.17",
+	"width": 1024,
+	"height": 768,
+	"systems": {
+		"30000021": {
+			"id": 30000021,
+			"name": "Kuharah",
+			"x": 637,
+			"y": 697
+		},
+		"30000157": {
+			"id": 30000157,
+			"name": "Otela",
+			"x": 447,
+			"y": 100
+		},
+		"30000192": {
+			"id": 30000192,
+			"name": "Otanuomi",
+			"x": 686,
+			"y": 324
+		},
+		"30000206": {
+			"id": 30000206,
+			"name": "Wirashoda",
+			"x": 337,
+			"y": 699
+		},
+		"30001372": {
+			"id": 30001372,
+			"name": "Kino",
+			"x": 496,
+			"y": 25
+		},
+		"30001381": {
+			"id": 30001381,
+			"name": "Arvasaras",
+			"x": 248,
+			"y": 396
+		},
+		"30001413": {
+			"id": 30001413,
+			"name": "Nani",
+			"x": 775,
+			"y": 473
+		},
+		"30001445": {
+			"id": 30001445,
+			"name": "Nalvula",
+			"x": 545,
+			"y": 98
+		},
+		"30002079": {
+			"id": 30002079,
+			"name": "Krirald",
+			"x": 637,
+			"y": 249
+		},
+		"30002225": {
+			"id": 30002225,
+			"name": "Harva",
+			"x": 818,
+			"y": 696
+		},
+		"30002411": {
+			"id": 30002411,
+			"name": "Skarkon",
+			"x": 818,
+			"y": 545
+		},
+		"30002652": {
+			"id": 30002652,
+			"name": "Ala",
+			"x": 237,
+			"y": 699
+		},
+		"30002702": {
+			"id": 30002702,
+			"name": "Archee",
+			"x": 46,
+			"y": 698
+		},
+		"30002737": {
+			"id": 30002737,
+			"name": "Konola",
+			"x": 591,
+			"y": 174
+		},
+		"30002770": {
+			"id": 30002770,
+			"name": "Tunudan",
+			"x": 724,
+			"y": 697
+		},
+		"30002797": {
+			"id": 30002797,
+			"name": "Kaunokka",
+			"x": 198,
+			"y": 474
+		},
+		"30003046": {
+			"id": 30003046,
+			"name": "Angymonne",
+			"x": 98,
+			"y": 623
+		},
+		"30003495": {
+			"id": 30003495,
+			"name": "Raravoss",
+			"x": 869,
+			"y": 622
+		},
+		"30003504": {
+			"id": 30003504,
+			"name": "Niarja",
+			"x": 921,
+			"y": 697
+		},
+		"30005005": {
+			"id": 30005005,
+			"name": "Ignebaener",
+			"x": 396,
+			"y": 175
+		},
+		"30005029": {
+			"id": 30005029,
+			"name": "Vale",
+			"x": 138,
+			"y": 698
+		},
+		"30010141": {
+			"id": 30010141,
+			"name": "Sakenta",
+			"x": 297,
+			"y": 323
+		},
+		"30020141": {
+			"id": 30020141,
+			"name": "Senda",
+			"x": 433,
+			"y": 699
+		},
+		"30031392": {
+			"id": 30031392,
+			"name": "Komo",
+			"x": 346,
+			"y": 248
+		},
+		"30040141": {
+			"id": 30040141,
+			"name": "Urhinichi",
+			"x": 728,
+			"y": 396
+		},
+		"30045328": {
+			"id": 30045328,
+			"name": "Ahtila",
+			"x": 538,
+			"y": 698
+		},
+		"30045329": {
+			"id": 30045329,
+			"name": "Ichoriya",
+			"x": 149,
+			"y": 548
+		}
+	}
+}
