@@ -3,8 +3,8 @@ package engine
 import (
 	"errors"
 	"fmt"
+	"github.com/eve-spyglass/spyglass2/feeds"
 	"gonum.org/v1/gonum/graph/simple"
-	"spyglass-2/feeds"
 	"strconv"
 	"time"
 )
@@ -15,10 +15,8 @@ type (
 		CurrentMap       string
 		monitoredSystems []int32
 
-		locationInput chan<- feeds.Locstat
-		intelInput    chan<- feeds.Report
-
-		//reportLibrary map[string]feeds.Report
+		locationInput chan feeds.Locstat
+		intelInput    chan feeds.Report
 
 		mapGraph *simple.UndirectedGraph
 	}
@@ -27,13 +25,15 @@ type (
 		// Status returns a map of systems to status, where true is hostile and false is clear
 		Status() map[int32]bool
 		// LastUpdated returns the time since any information was received about a system
-		LastUpdated() map[int32]time.Duration
+		LastUpdated() map[int32]time.Time
 		//	SetSystems will notify the IntelResource which systems to alarm upon
 		SetMonitoredSystems(systems []int32) error
 		// GetJumps will return the connections between the given systems
 		// it returns a string array where each string represents a connection
 		// it will be formatted as "1234-5678" and is directional from source to sink
 		GetJumps() []string
+		// GetFeeders will return the two channels that can e used to feed information into the resource
+		GetFeeders() (chan<- feeds.Report, chan<- feeds.Locstat)
 	}
 )
 
@@ -59,6 +59,7 @@ func NewIntelEngine() (*IntelEngine, error) {
 }
 
 func (ie *IntelEngine) updateMapGraph() error {
+	// TODO change this to account for non region mapdefs
 	//	Find the correct region based on the current selected map
 	for _, r := range ie.Galaxy {
 		if r.Name == ie.CurrentMap {
@@ -78,8 +79,6 @@ func (ie *IntelEngine) updateMapGraph() error {
 				}
 			}
 
-			//out, _ := dot.Marshal(ie.mapGraph, ie.CurrentMap, "", "\t")
-			//fmt.Println(string(out))
 
 			return nil
 		}
@@ -100,17 +99,16 @@ func (ie *IntelEngine) IsSystemMonitored(sys int32) bool {
 
 // Status returns a map of systems to status, where true is hostile and false is clear
 func (ie *IntelEngine) Status() map[int32]bool {
-	return make(map[int32]bool)
 	//	TODO implement this
+	return make(map[int32]bool)
 }
 
 // LastUpdated returns the time since any information was received about a system
-func (ie *IntelEngine) LastUpdated() map[int32]time.Duration {
-	return make(map[int32]time.Duration)
-	//	 TODO implement this
+func (ie *IntelEngine) LastUpdated() map[int32]time.Time {
+	return make(map[int32]time.Time)
 }
 
-//	SetSystems will notify the IntelResource which systems to alarm upon
+//	SetSystems will notify the IntelResource which systems to monitor for intel
 func (ie *IntelEngine) SetMonitoredSystems(systems []int32) error {
 	ie.monitoredSystems = make([]int32, len(systems))
 	for _, system := range systems {
@@ -144,3 +142,8 @@ func (ie *IntelEngine) GetJumps() []string {
 	}
 	return jumps
 }
+
+func (ie *IntelEngine) GetFeeders() (chan<- feeds.Report, chan<- feeds.Locstat) {
+	return ie.intelInput, ie.locationInput
+}
+

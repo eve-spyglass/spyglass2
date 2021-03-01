@@ -5,7 +5,11 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 
+// svg panzoom
+import panZoom from 'vue-panzoom';
+
 Vue.use(Vuetify);
+Vue.use(panZoom)
 
 import App from './App.vue';
 

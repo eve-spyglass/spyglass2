@@ -1,6 +1,6 @@
 package engine
 
-//go:generate go run -race gen_mapdata.go
+//go:generate go run gen_mapdata.go
 
 import (
 	"bytes"

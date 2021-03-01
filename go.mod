@@ -1,4 +1,4 @@
-module spyglass-2
+module github.com/eve-spyglass/spyglass2
 
 go 1.16
 

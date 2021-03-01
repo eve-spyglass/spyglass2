@@ -7,9 +7,8 @@ import (
 	"encoding/json"
 	"errors"
 	svg "github.com/ajstarks/svgo"
-	"golang.org/x/exp/rand"
+	"github.com/eve-spyglass/spyglass2/engine"
 	"log"
-	"spyglass-2/engine"
 	"strconv"
 	"strings"
 	"time"
@@ -22,18 +21,6 @@ type (
 		connections []string
 
 		intelResource engine.IntelResource
-	}
-
-	mapCollection map[string]eveMap
-	eveMap        struct {
-		Systems map[int32]eveSystem `json:"systems"`
-		Width   int32               `json:"width"`
-		Height  int32               `json:"height"`
-	}
-	eveSystem struct {
-		ID int32 `json:"id"`
-		X  int   `json:"x"`
-		Y  int   `json:"y"`
 	}
 
 	spyglassMapsCollection map[string]spyglassMap
@@ -60,7 +47,7 @@ type (
 )
 
 var (
-	//go:embed maps/*.json
+	//go:embed mapdefs/*.json
 	mapdefs embed.FS
 
 	errMapNotDefined = errors.New("map not defined")
@@ -70,13 +57,13 @@ func NewEveMapper() (*EveMapper, error) {
 
 	col := make(spyglassMapsCollection)
 
-	fs, err := mapdefs.ReadDir("maps")
+	fs, err := mapdefs.ReadDir("mapdefs")
 	if err != nil {
 		return nil, err
 	}
 
 	for _, fn := range fs {
-		f, err := mapdefs.ReadFile("maps/" + fn.Name())
+		f, err := mapdefs.ReadFile("mapdefs/" + fn.Name())
 		if err != nil {
 			log.Printf("WARN: fs access: %s", err.Error())
 			continue
@@ -174,6 +161,14 @@ func (em *EveMapper) GetCurrentMapSVG() (string) {
 		}
 	}
 
+	statusi := make(map[int32]bool)
+	timei := make(map[int32]time.Time)
+
+	if em.intelResource != nil {
+		statusi = em.intelResource.Status()
+		timei = em.intelResource.LastUpdated()
+	}
+
 	var buf bytes.Buffer
 
 	canvas := svg.New(&buf)
@@ -223,20 +218,28 @@ func (em *EveMapper) GetCurrentMapSVG() (string) {
 	for _, s := range mp.Systems {
 		// Start an individual group for each system
 		canvas.Gid(strconv.Itoa(int(s.ID)))
-		status := rand.Float32() > 0.5
-		style := "fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1px"
+		st, ok := statusi[s.ID]
+		status := ok && st
+		style := "stroke:rgb(0,0,0);stroke-width:1px"
 		if status {
-			style = "fill:rgb(255,128,128);stroke:rgb(0,0,0);stroke-width:1px"
+			style = style + ";fill:rgb(255,128,128)"
+		} else {
+			style = style + ";fill:rgb(255,255,255)"
 		}
 		rnd := systemRounded
 		if s.External {
 			rnd = 0
 		}
-		canvas.Roundrect(s.X, s.Y, systemWidth, systemHeight, rnd, systemRounded, style)
+		canvas.Roundrect(s.X, s.Y, systemWidth, systemHeight, rnd, rnd, style)
+
+		t, tok := timei[s.ID]
 
 		//	create the system name text
-		name := strconv.Itoa(int(s.ID))
-		stat := "STATUS!"
+		name := s.Name
+		stat := "-"
+		if tok{
+			stat = time.Since(t).String()
+		}
 		x := s.X + (systemWidth / 2)
 		yn := s.Y + (systemHeight / 2)
 		ys := s.Y + (systemHeight * 7 / 8)

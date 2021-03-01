@@ -24,16 +24,16 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Application</v-toolbar-title>
     </v-app-bar>
-    <v-main>
+    <v-main style="background: #ffffff;">
       <v-container fluid class="px-0">
         <v-layout justify-center align-center class="px-0">
           <hello-world></hello-world>
         </v-layout>
       </v-container>
     </v-main>
-    <v-footer app fixed>
-      <span style="margin-left:1em">&copy; You</span>
-    </v-footer>
+<!--    <v-footer app fixed>-->
+<!--      <span style="margin-left:1em">&copy; You</span>-->
+<!--    </v-footer>-->
   </v-app>
 </template>
 

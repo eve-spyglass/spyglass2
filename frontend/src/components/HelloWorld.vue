@@ -1,6 +1,10 @@
 <template>
   <v-container fluid class="px-0">
-    <div v-html="message" style="background-color: azure"></div>
+    <panZoom
+        :options="{minZoom: 0.5, maxZoom: 5, zoomSpeed:0.5}"
+    >
+        <div id="svgMap" v-html="message"></div>
+    </panZoom>
   </v-container>
 </template>
 
@@ -22,7 +26,7 @@
     mounted: function() {
       window.setInterval(() => {
         this.getMessage()
-      }, 1000)
+      }, 10000)
     }
   }
 </script>
@@ -36,22 +40,22 @@
     width: 100%;
   }
 
-  a:hover {
-    font-size: 1.7em;
-    border-color: blue;
-    background-color: blue;
-    color: white;
-    border: 3px solid white;
-    border-radius: 10px;
-    padding: 9px;
-    cursor: pointer;
-    transition: 500ms;
-  }
+  /*a:hover {*/
+  /*  font-size: 1.7em;*/
+  /*  border-color: blue;*/
+  /*  background-color: blue;*/
+  /*  color: white;*/
+  /*  border: 3px solid white;*/
+  /*  border-radius: 10px;*/
+  /*  padding: 9px;*/
+  /*  cursor: pointer;*/
+  /*  transition: 500ms;*/
+  /*}*/
 
   a {
     font-size: 1.7em;
     border-color: white;
-    background-color: #121212;
+    background-color: white;
     color: white;
     border: 3px solid white;
     border-radius: 10px;
