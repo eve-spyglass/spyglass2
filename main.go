@@ -9,6 +9,7 @@ import (
 	"github.com/leaanthony/mewn"
 	"github.com/wailsapp/wails"
 	"log"
+	"time"
 )
 
 func basic() string {
@@ -77,7 +78,7 @@ func main() {
 	em.SetMap("Providence")
 	//_ = em.GetCurrentMapSVG()
 
-	//time.Sleep(10 * time.Minute)
+	time.Sleep(10 * time.Minute)
 	//START FRONTEND
 
 	js := mewn.String("./frontend/dist/app.js")

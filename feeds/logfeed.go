@@ -144,7 +144,7 @@ func (f *LogFeed) Feed(ctx context.Context, reps chan Report, locs chan Locstat,
 		log.Fatalln(err)
 	}
 
-	if err := w.Start(100 * time.Millisecond); err != nil {
+	if err := w.Start(1000 * time.Millisecond); err != nil {
 		log.Fatalln(err)
 	}
 

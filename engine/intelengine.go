@@ -1,6 +1,7 @@
 package engine
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"github.com/eve-spyglass/spyglass2/feeds"
@@ -14,6 +15,9 @@ type (
 		Galaxy           NewEden
 		CurrentMap       string
 		monitoredSystems []int32
+
+		reportHistory []feeds.Report
+		locationHistory []feeds.Locstat
 
 		locationInput chan feeds.Locstat
 		intelInput    chan feeds.Report
@@ -37,7 +41,7 @@ type (
 	}
 )
 
-func NewIntelEngine() (*IntelEngine, error) {
+func NewIntelEngine(ctx context.Context) (*IntelEngine, error) {
 
 	galaxy := make(NewEden)
 	err := galaxy.LoadData()
