@@ -6,12 +6,14 @@ import (
 	_ "embed"
 	"encoding/json"
 	"errors"
-	svg "github.com/ajstarks/svgo"
-	"github.com/eve-spyglass/spyglass2/engine"
 	"log"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
+
+	svg "github.com/ajstarks/svgo"
+	"github.com/eve-spyglass/spyglass2/engine"
 )
 
 type (
@@ -27,22 +29,21 @@ type (
 
 	spyglassMap struct {
 		Systems map[int32]spyglassSystem
-		Width int
-		Height int
+		Width   int
+		Height  int
 
-
-		Name string
-		Author string
+		Name        string
+		Author      string
 		Description string
 	}
 
 	spyglassSystem struct {
-		ID   int32  `json:"id"`
-		Name string `json:"name"`
-		Icon string `json:"icon,omitempty"`
-		X    int  `json:"x"`
-		Y    int  `json:"y"`
-		External bool `json:"external,omitempty"`
+		ID       int32  `json:"id"`
+		Name     string `json:"name"`
+		Icon     string `json:"icon,omitempty"`
+		X        int    `json:"x"`
+		Y        int    `json:"y"`
+		External bool   `json:"external,omitempty"`
 	}
 )
 
@@ -82,7 +83,6 @@ func NewEveMapper() (*EveMapper, error) {
 		col[def.Name] = def
 	}
 
-
 	mapper := &EveMapper{
 		definitions: col,
 		connections: make([]string, 0),
@@ -100,9 +100,12 @@ func (em *EveMapper) SetIntelResource(source engine.IntelResource) {
 
 func (em *EveMapper) GetAvailableMaps() (maps []string) {
 	maps = make([]string, len(em.definitions))
+	i := 0
 	for m := range em.definitions {
-		maps = append(maps, m)
+		maps[i] = m
+		i++
 	}
+	sort.Strings(maps)
 	return maps
 }
 
@@ -144,7 +147,7 @@ func (em *EveMapper) GetMap() string {
 	return em.currentMap
 }
 
-func (em *EveMapper) GetCurrentMapSVG() (string) {
+func (em *EveMapper) GetCurrentMapSVG() string {
 
 	start := time.Now()
 
@@ -185,7 +188,7 @@ func (em *EveMapper) GetCurrentMapSVG() (string) {
 
 		source, sok := strconv.Atoi(sp[0])
 		dest, dok := strconv.Atoi(sp[1])
-		if ((sok != nil) || (dok != nil)) {
+		if (sok != nil) || (dok != nil) {
 			log.Println(sp[0], sp[1])
 			log.Println("Not ints")
 			continue
@@ -237,8 +240,8 @@ func (em *EveMapper) GetCurrentMapSVG() (string) {
 		//	create the system name text
 		name := s.Name
 		stat := "-"
-		if tok{
-			stat = time.Since(t).String()
+		if tok {
+			stat = time.Since(t).Truncate(time.Second).String()
 		}
 		x := s.X + (systemWidth / 2)
 		yn := s.Y + (systemHeight / 2)

@@ -9,6 +9,10 @@
 </template>
 
 <script>
+
+
+import Wails from '@wailsapp/runtime';
+
   export default {
     data () {
       return {
@@ -24,9 +28,15 @@
       }
     },
     mounted: function() {
-      window.setInterval(() => {
-        this.getMessage()
-      }, 10000)
+      this.getMessage();
+      Wails.Events.On("ui_update", nothing => {
+        if (nothing) {
+          this.getMessage();
+        } else {
+          this.getMessage();
+        }
+        
+      });
     }
   }
 </script>

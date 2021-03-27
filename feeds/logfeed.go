@@ -5,16 +5,16 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/radovskyb/watcher"
-	"golang.org/x/text/encoding/unicode"
-	"golang.org/x/text/transform"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
-	"runtime"
 	"strings"
 	"time"
+
+	"github.com/radovskyb/watcher"
+	"golang.org/x/text/encoding/unicode"
+	"golang.org/x/text/transform"
 )
 
 type (
@@ -40,29 +40,6 @@ var (
 const (
 	logTimeFormat = "2006.01.02 15:04:05"
 )
-
-func (f *LogFeed) LogDirHint() (string, error) {
-
-	switch runtime.GOOS {
-	case "windows":
-		dir, err := os.UserHomeDir()
-		if err != nil {
-			return "", err
-		}
-		fp := filepath.Join(dir, "Documents", "Eve", "Logs")
-		if f.CheckLogDir(fp) {
-			return fp, nil
-		}
-	case "linux":
-		fallthrough
-	case "darwin":
-		fallthrough
-	default:
-		return "", PlatformNotImplemented
-	}
-
-	return "", LogFilesNotFound
-}
 
 func (f *LogFeed) CheckLogDir(dir string) (valid bool) {
 	reqs := []string{"Chatlogs", "Fleetlogs", "Gamelogs", "Marketlogs"}
@@ -108,9 +85,9 @@ func (f *LogFeed) GetChatRooms() (rooms []string) {
 	return f.roomnames
 }
 
-func (f *LogFeed) Feed(ctx context.Context, reps chan Report, locs chan Locstat, errs chan error) (err error) {
+func (f *LogFeed) Feed(ctx context.Context, reps chan<- Report, locs chan<- Locstat, errs chan<- error) (err error) {
 
-	log.Println("LW: Starting the logwatcher!")
+	log.Printf("LW: Starting the logwatcher! - DIR: %s", f.chatlogDir)
 
 	if f.loglines == nil {
 		f.loglines = make(map[string]uint64)
@@ -124,9 +101,11 @@ func (f *LogFeed) Feed(ctx context.Context, reps chan Report, locs chan Locstat,
 			case event := <-w.Event:
 				rs, ls := f.checkLogFile(event)
 				for _, r := range rs {
+					log.Println("rep")
 					reps <- r
 				}
 				for _, l := range ls {
+					log.Println("loc")
 					locs <- l
 				}
 
@@ -144,7 +123,7 @@ func (f *LogFeed) Feed(ctx context.Context, reps chan Report, locs chan Locstat,
 		log.Fatalln(err)
 	}
 
-	if err := w.Start(1000 * time.Millisecond); err != nil {
+	if err := w.Start(500 * time.Millisecond); err != nil {
 		log.Fatalln(err)
 	}
 
@@ -152,6 +131,8 @@ func (f *LogFeed) Feed(ctx context.Context, reps chan Report, locs chan Locstat,
 }
 
 func (f *LogFeed) checkLogFile(fileInfo os.FileInfo) (reps []Report, locs []Locstat) {
+
+	log.Println("DEBUG: LW: Event 1")
 
 	lf, err := os.Open(filepath.Join(f.chatlogDir, fileInfo.Name()))
 	if err != nil {
@@ -172,7 +153,7 @@ func (f *LogFeed) checkLogFile(fileInfo os.FileInfo) (reps []Report, locs []Locs
 		text := blf.Text()
 
 		// Now remove the weird BOM like thing (WTF is this CCP?)
-		if len(text) > 3{
+		if len(text) > 3 {
 			text = text[3:]
 		}
 
@@ -180,9 +161,13 @@ func (f *LogFeed) checkLogFile(fileInfo os.FileInfo) (reps []Report, locs []Locs
 		case line == 7:
 			//	This is the channel id, use it to check local channel regardless of lang
 			isLocal = strings.TrimSpace(strings.Split(text, ":")[1]) == "local"
+			if isLocal {
+				log.Println("DEBUG: LW: Event LOCAL")
+			}
 		case line == 8:
 			//	This is the channel name
 			chanName = strings.TrimSpace(strings.Split(text, ":")[1])
+			log.Printf("DEBUG: LW: Event - %s", chanName)
 			if lim, ok := f.loglines[chanName]; ok {
 				skip = lim
 			} else {
@@ -198,11 +183,13 @@ func (f *LogFeed) checkLogFile(fileInfo os.FileInfo) (reps []Report, locs []Locs
 				//	Now check if the channel is one we care about, if not then just return early :)
 				found := false
 				for _, room := range f.roomnames {
+					log.Printf("DEBUG LW: Checking %s = %s => %v", chanName, room, chanName == room)
 					if chanName == room {
 						found = true
 						break
 					}
 				}
+				log.Printf("DEBUG: LW: Found - %v", found)
 				if !found {
 					return nil, nil
 				}
@@ -211,24 +198,28 @@ func (f *LogFeed) checkLogFile(fileInfo os.FileInfo) (reps []Report, locs []Locs
 		case line == 9:
 			//	This is the listener line
 			listener = strings.TrimSpace(strings.Split(text, ":")[1])
+			log.Printf("DEBUG: LW: Listener - %v", listener)
 		case line >= skip:
 			//	This is a line we want to report
 			if len(text) < 24 {
 				// Happens occasionally
+				log.Println("Short Line")
 				break
 			}
 			if isLocal {
 				loc := f.parseLocalMessage(text)
-				if loc.System  != "" {
+				if loc.System != "" {
 					loc.Character = listener
 					locs = append(locs, loc)
 				}
 			} else {
 				//	Dealing with an intel room
+				log.Println("DEBUG: LW: Intel message")
 				rep := f.parseIntelMessage(text)
 				if rep != (Report{}) {
 					rep.Listener = listener
 					rep.Source = fmt.Sprintf("log: %s", chanName)
+					log.Printf("DEBUG: LW: Making Report - %#v", rep)
 					reps = append(reps, rep)
 				}
 			}
@@ -236,6 +227,8 @@ func (f *LogFeed) checkLogFile(fileInfo os.FileInfo) (reps []Report, locs []Locs
 	}
 
 	f.loglines[chanName] = line + 1
+
+	log.Printf("DEBUG: LW: Making %d intel reports and %d location reports", len(reps), len(locs))
 
 	return reps, locs
 }
@@ -248,7 +241,7 @@ func (f *LogFeed) parseLocalMessage(msg string) (loc Locstat) {
 	}
 
 	if sender != "EVE System" {
-		//	Not a location update
+		//	Not a location update, return an empty message
 		return Locstat{}
 	}
 
@@ -268,11 +261,13 @@ func (f *LogFeed) parseIntelMessage(msg string) (rep Report) {
 		return Report{}
 	}
 
-	return Report{
+	rep = Report{
 		Message:  msgp,
 		Reporter: sender,
-		time:     t,
+		Time:     t,
 	}
+
+	return rep
 }
 
 func (f *LogFeed) splitLogMessage(msg string) (t time.Time, sender string, message string, err error) {

@@ -7,11 +7,11 @@ import (
 
 type (
 	Report struct {
-		Message string
+		Message  string
 		Reporter string
 		Listener string
-		Source string
-		time time.Time
+		Source   string
+		Time     time.Time
 	}
 
 	Locstat struct {
@@ -32,4 +32,3 @@ type (
 func (r *Report) Hash() string {
 	return r.Message
 }
-
