@@ -48,6 +48,12 @@
                   clearable
                 ></v-text-field>
 
+                <v-text-field
+                  v-model="clearWords"
+                  label="Clear Words"
+                  clearable
+                ></v-text-field>
+
               </v-form>
               <v-card
                 class="mx-auto"
@@ -94,6 +100,7 @@
         channels: "",
         region: null,
         regionOptions: [""],
+        clearWords: "",
       }
     },
     mounted: function() {
@@ -107,6 +114,7 @@
           this.chatlogDir = d.chatLogDirectory;
           this.region = d.selectedMap;
           this.channels = d.channels.join(";");
+          this.clearWords = d.clearWords.join(";");
         })
 
         window.backend.EveMapper.GetAvailableMaps().then(result => {
@@ -119,7 +127,8 @@
         var cfg = {
           selectedMap: this.region,
           chatLogDirectory: this.chatlogDir,
-          channels: this.channels.split(";")
+          channels: this.channels.split(";"),
+          clearWords: this.clearWords.split(";")
         }
 
         window.backend.Config.SetConfig(cfg)

@@ -81,6 +81,8 @@ func (cfg *Config) SaveConfig() error {
 	defer f.Close()
 
 	enc := json.NewEncoder(f)
+
+	enc.SetIndent("", "\t")
 	err = enc.Encode(cfg.Data)
 
 	return err

@@ -28,7 +28,7 @@ type (
 )
 
 var (
-	LogFilesNotFound       = errors.New("failed to locate eve log directory")
+	LogFilesNotFound       = errors.New("failed to locate eve log directory, please set the correct directory in the settings")
 	PlatformNotImplemented = errors.New("platform not yet implemented")
 	PlatformNotSupported   = errors.New("platform requires manual log file directory selection")
 
@@ -46,8 +46,16 @@ func (f *LogFeed) CheckLogDir(dir string) (valid bool) {
 
 	d, err := ioutil.ReadDir(dir)
 	if err != nil {
+		log.Printf("log check ioutil error: %s", err.Error())
 		return false
 	}
+
+	ls := make([]string, len(d))
+	for i, f := range d {
+		ls[i] = f.Name()
+	}
+
+	log.Printf("log watcher directory check", ls)
 
 	valid = true
 
@@ -86,6 +94,11 @@ func (f *LogFeed) GetChatRooms() (rooms []string) {
 }
 
 func (f *LogFeed) Feed(ctx context.Context, reps chan<- Report, locs chan<- Locstat, errs chan<- error) (err error) {
+
+	valid := f.CheckLogDir(filepath.Dir(f.chatlogDir))
+	if !valid {
+		return LogFilesNotFound
+	}
 
 	log.Printf("LW: Starting the logwatcher! - DIR: %s", f.chatlogDir)
 

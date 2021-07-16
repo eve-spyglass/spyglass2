@@ -164,7 +164,7 @@ func (em *EveMapper) GetCurrentMapSVG() string {
 		}
 	}
 
-	statusi := make(map[int32]bool)
+	statusi := make(map[int32]uint8)
 	timei := make(map[int32]time.Time)
 
 	if em.intelResource != nil {
@@ -222,12 +222,25 @@ func (em *EveMapper) GetCurrentMapSVG() string {
 		// Start an individual group for each system
 		canvas.Gid(strconv.Itoa(int(s.ID)))
 		st, ok := statusi[s.ID]
-		status := ok && st
+		status := uint8(0)
+		if ok {
+			status = st
+		}
 		style := "stroke:rgb(0,0,0);stroke-width:1px"
-		if status {
+		switch status {
+		// Unknown
+		case 0:
+			style = style + ";fill:rgb(224,224,224)"
+			break
+		// Clear
+		case 1:
+			style = style + ";fill:rgb(128,255,128)"
+			break
+		// Hostile
+		case 2:
 			style = style + ";fill:rgb(255,128,128)"
-		} else {
-			style = style + ";fill:rgb(255,255,255)"
+			break
+
 		}
 		rnd := systemRounded
 		if s.External {

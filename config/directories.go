@@ -14,7 +14,7 @@ func (cfg *Config) logDirHint() string {
 		if err != nil {
 			return ""
 		}
-		fp := filepath.Join(dir, "Documents", "Eve", "Logs")
+		fp := filepath.Join(dir, "Documents", "Eve", "logs")
 		return fp
 	case "linux":
 		fallthrough

@@ -5,12 +5,14 @@ import (
 	"errors"
 	"fmt"
 	"log"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
 
 	"github.com/agext/levenshtein"
 	"github.com/eve-spyglass/spyglass2/feeds"
+	"github.com/sirupsen/logrus"
 	"gonum.org/v1/gonum/graph/simple"
 )
 
@@ -22,10 +24,10 @@ type (
 
 		clearWords []string
 
-		reportHistory   []feeds.Report
-		locationHistory []feeds.Locstat
+		reportHistory   []*feeds.Report
+		locationHistory []*feeds.Locstat
 
-		currentStatus map[int32]bool
+		currentStatus map[int32]uint8
 		lastUpdated   map[int32]time.Time
 
 		locationInput chan feeds.Locstat
@@ -35,8 +37,8 @@ type (
 	}
 
 	IntelResource interface {
-		// Status returns a map of systems to status, where true is hostile and false is clear
-		Status() map[int32]bool
+		// Status returns a map of systems to status, where 0 is unknown 1 is clear and 2 is hostile
+		Status() map[int32]uint8
 		// LastUpdated returns the time since any information was received about a system
 		LastUpdated() map[int32]time.Time
 		//	SetSystems will notify the IntelResource which systems to alarm upon
@@ -46,7 +48,7 @@ type (
 		// it will be formatted as "1234-5678" and is directional from source to sink
 		GetJumps() []string
 		// GetFeeders will return the two channels that can e used to feed information into the resource
-		GetFeeders() (chan<- feeds.Report, chan<- feeds.Locstat)
+		GetFeeders() (chan<- feeds.Report, chan<- feeds.Locstat, error)
 	}
 )
 
@@ -126,8 +128,8 @@ func (ie *IntelEngine) startListeners(ctx context.Context) error {
 			select {
 			case rep := <-ie.intelInput:
 				// Received a new intel report
-				ie.reportHistory = append(ie.reportHistory, rep)
-				ie.checkReport(rep)
+				ie.reportHistory = append(ie.reportHistory, &rep)
+				ie.checkReport(&rep)
 				log.Printf("IE: Got Intel - %s", rep.Message)
 
 			case loc := <-ie.locationInput:
@@ -143,7 +145,20 @@ func (ie *IntelEngine) startListeners(ctx context.Context) error {
 	return nil
 }
 
-func (ie *IntelEngine) checkReport(rep feeds.Report) {
+func (ie *IntelEngine) GetIntelMessages() []string {
+
+	rl := feeds.ReportList(ie.reportHistory)
+	sort.Sort(rl)
+
+	strngs := make([]string, rl.Len())
+	for i := range rl {
+		strngs[i] = rl[i].String()
+	}
+
+	return strngs
+}
+
+func (ie *IntelEngine) checkReport(rep *feeds.Report) {
 	// Now we need to check each part of the message for potential matches to monitored system names.
 	msgParts := strings.Split(rep.Message, " ")
 
@@ -152,7 +167,8 @@ func (ie *IntelEngine) checkReport(rep feeds.Report) {
 	var ignores = []string{"in", "as", "is"}
 
 	var systems []int32
-	status := true
+
+	rep.Status = 2
 
 	for _, word := range msgParts {
 		lowerWord := strings.ToLower(word)
@@ -179,14 +195,16 @@ func (ie *IntelEngine) checkReport(rep feeds.Report) {
 		}
 
 		for _, cw := range ie.clearWords {
+			logrus.Debug("IE - Checking %s vs %s for CW", lowerWord, strings.ToLower(cw))
 			if lowerWord == strings.ToLower(cw) {
-				status = false
+				logrus.Debug("MATCHED CLEAR WORD %s to %s", lowerWord, strings.ToLower(cw))
+				rep.Status = 1
 			}
 		}
 	}
 
 	for _, sys := range systems {
-		ie.currentStatus[sys] = status
+		ie.currentStatus[sys] = rep.Status
 		ie.lastUpdated[sys] = rep.Time
 	}
 
@@ -204,7 +222,7 @@ func (ie *IntelEngine) IsSystemMonitored(sys int32) bool {
 // The following methods are to satisfy the IntelResource interface
 
 // Status returns a map of systems to status, where true is hostile and false is clear
-func (ie *IntelEngine) Status() map[int32]bool {
+func (ie *IntelEngine) Status() map[int32]uint8 {
 	// m := make(map[int32]bool, len(ie.monitoredSystems))
 	// for _, v := range ie.monitoredSystems {
 	// 	m[v] = rand.Float32() > 0.5
@@ -229,7 +247,7 @@ func (ie *IntelEngine) LastUpdated() map[int32]time.Time {
 //	SetSystems will notify the IntelResource which systems to monitor for intel
 func (ie *IntelEngine) SetMonitoredSystems(systems []int32) error {
 	ie.monitoredSystems = make([]int32, len(systems))
-	ie.currentStatus = make(map[int32]bool, len(systems))
+	ie.currentStatus = make(map[int32]uint8, len(systems))
 	ie.lastUpdated = make(map[int32]time.Time, len(systems))
 
 	for _, system := range systems {
@@ -264,6 +282,6 @@ func (ie *IntelEngine) GetJumps() []string {
 	return jumps
 }
 
-func (ie *IntelEngine) GetFeeders() (chan<- feeds.Report, chan<- feeds.Locstat) {
-	return ie.intelInput, ie.locationInput
+func (ie *IntelEngine) GetFeeders() (chan<- feeds.Report, chan<- feeds.Locstat, error) {
+	return ie.intelInput, ie.locationInput, nil
 }
